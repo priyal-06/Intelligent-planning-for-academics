@@ -4,6 +4,13 @@
  */
 package intelligent.planning.pkgfor.academics;
 
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Admin
@@ -34,7 +41,7 @@ public class after12 extends javax.swing.JFrame {
         btnpro = new javax.swing.JButton();
         btnbba = new javax.swing.JButton();
         btnbsc = new javax.swing.JButton();
-        jLabel16 = new javax.swing.JLabel();
+        backbtn = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         bsc = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -47,12 +54,14 @@ public class after12 extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea3 = new javax.swing.JTextArea();
-        jLabel6 = new javax.swing.JLabel();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        jTextArea4 = new javax.swing.JTextArea();
         jLabel7 = new javax.swing.JLabel();
         jScrollPane5 = new javax.swing.JScrollPane();
         jTextArea5 = new javax.swing.JTextArea();
+        jLabel16 = new javax.swing.JLabel();
+        btnlink1 = new javax.swing.JButton();
+        btnlink2 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jLabel24 = new javax.swing.JLabel();
         competitive = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -155,10 +164,11 @@ public class after12 extends javax.swing.JFrame {
             }
         });
 
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Arrowback.png"))); // NOI18N
-        jLabel16.addMouseListener(new java.awt.event.MouseAdapter() {
+        backbtn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        backbtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\back.png")); // NOI18N
+        backbtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel16MouseClicked(evt);
+                backbtnMouseClicked(evt);
             }
         });
 
@@ -169,28 +179,28 @@ public class after12 extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnpro)
+                    .addComponent(btnpro, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btncom, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnbba, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnbsc, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(19, Short.MAX_VALUE))
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jLabel16)
+                .addComponent(backbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jLabel16)
-                .addGap(59, 59, 59)
+                .addComponent(backbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37)
                 .addComponent(btnbsc, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(53, 53, 53)
+                .addGap(71, 71, 71)
                 .addComponent(btncom, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(55, 55, 55)
+                .addGap(66, 66, 66)
                 .addComponent(btnpro, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(56, 56, 56)
+                .addGap(74, 74, 74)
                 .addComponent(btnbba, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(273, Short.MAX_VALUE))
+                .addContainerGap(247, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 190, 670));
@@ -201,6 +211,7 @@ public class after12 extends javax.swing.JFrame {
         jLabel3.setText("BSC. IN DATA SCIENCE");
 
         jTextArea1.setEditable(false);
+        jTextArea1.setBackground(new java.awt.Color(255, 255, 255));
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jTextArea1.setText("BSc Data Science is a 3 year full-time course that comes under the domains of Computer Science, Business Analytics and Artificial Intelligence.\nData Science is an interdisciplinary subject that includes the use of Statistics, Big Data Analytics, Machine Learning and related aspects\nin order to understand the problem or phenomena with respect to a set of real-world data.\nDuration : 3years\nCourse Fees:Under 6 lakh");
@@ -210,6 +221,7 @@ public class after12 extends javax.swing.JFrame {
         jLabel4.setText("BSC. IN COMPUTER SCIENCE");
 
         jTextArea2.setEditable(false);
+        jTextArea2.setBackground(new java.awt.Color(255, 255, 255));
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
         jTextArea2.setText("Bsc.Computer Science is a three years undergraduate programme. Computer Science is a field that deals with the theory of computing,\nprogramming languages, database systems, networking, software engineering, artificial intelligence. After completing B.Sc. \nDuration : 3 years\nAverage Courses Fee -Rs 10,000 - Rs 25,000 per year");
@@ -219,19 +231,11 @@ public class after12 extends javax.swing.JFrame {
         jLabel5.setText("BSC. IN MATHEMATICS");
 
         jTextArea3.setEditable(false);
+        jTextArea3.setBackground(new java.awt.Color(255, 255, 255));
         jTextArea3.setColumns(20);
         jTextArea3.setRows(5);
         jTextArea3.setText("BSc Applied Mathematics is an undergraduate honours program of 3 years duration.\nIt is a valuable course that prepares the student for a career in applied math.\nDuration : 3 years \nAverage Annual Fees:INR 7,800 - 645,000");
         jScrollPane3.setViewportView(jTextArea3);
-
-        jLabel6.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        jLabel6.setText("BSC. IN STATISTICS");
-
-        jTextArea4.setEditable(false);
-        jTextArea4.setColumns(20);
-        jTextArea4.setRows(5);
-        jTextArea4.setText("BSc Statistics is a 3 year undergraduate course after 12th divided into 6 semesters that broadly deals with the areas of Probability and\n Statistical Methods, Survey Sampling, Numerical Analysis, etc that is essential for statistical analysis and solving statistical problems.\nBSc Statistics Course Fee : INR 20,000-1,50,000");
-        jScrollPane4.setViewportView(jTextArea4);
 
         jLabel7.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
         jLabel7.setText("BSC. IN INFORMATION TECHNOLOGY");
@@ -242,55 +246,108 @@ public class after12 extends javax.swing.JFrame {
         jTextArea5.setText("BSc IT Syllabus course subjects are Technical Communication Skills, Data Structures using C Language, Computer Organization and\nArchitecture, Mathematical & Statistical Foundation of Computer Science, Advanced-Data Structure, Networking and Internet \nEnvironment, Content Management System. Using Joomla, etc.\nDuration : 3 years\nFees structure : 25,000 to 40,000");
         jScrollPane5.setViewportView(jTextArea5);
 
+        jLabel16.setText("For more infomation cllickon below link : ");
+
+        btnlink1.setText("https://ocw.mit.edu/search/");
+        btnlink1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnlink1ActionPerformed(evt);
+            }
+        });
+
+        btnlink2.setText("https://www.coursera.org/");
+        btnlink2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnlink2ActionPerformed(evt);
+            }
+        });
+
+        jButton1.setText("https://collegedunia.com/india-colleges");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jLabel24.setText("For top 10 coleges and detail information please click on belo link :");
+
         javax.swing.GroupLayout bscLayout = new javax.swing.GroupLayout(bsc);
         bsc.setLayout(bscLayout);
         bscLayout.setHorizontalGroup(
             bscLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bscLayout.createSequentialGroup()
                 .addGroup(bscLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 804, Short.MAX_VALUE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 810, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1)
+                    .addGroup(bscLayout.createSequentialGroup()
+                        .addComponent(jLabel16)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnlink1)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnlink2)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(bscLayout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(bscLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel7))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jScrollPane1)
-                    .addComponent(jScrollPane3)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane5, javax.swing.GroupLayout.Alignment.TRAILING))
+                            .addGroup(bscLayout.createSequentialGroup()
+                                .addGroup(bscLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel5))
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(bscLayout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(bscLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(bscLayout.createSequentialGroup()
+                                        .addComponent(jLabel7)
+                                        .addGap(0, 0, Short.MAX_VALUE))
+                                    .addGroup(bscLayout.createSequentialGroup()
+                                        .addComponent(jLabel3)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 644, Short.MAX_VALUE))
+                                    .addComponent(jScrollPane3)))
+                            .addComponent(jScrollPane5))))
                 .addContainerGap())
+            .addGroup(bscLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel24)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         bscLayout.setVerticalGroup(
             bscLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bscLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5)
+                .addGroup(bscLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(bscLayout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addComponent(jLabel2))
+                    .addGroup(bscLayout.createSequentialGroup()
+                        .addGap(12, 12, 12)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(bscLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel16)
+                    .addComponent(btnlink1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnlink2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(bscLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel24)
+                    .addComponent(jButton1))
+                .addContainerGap(348, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab1", bsc);
@@ -356,7 +413,7 @@ public class after12 extends javax.swing.JFrame {
                                     .addComponent(jScrollPane7)
                                     .addComponent(jScrollPane11)))))
                     .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 823, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(47, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         competitiveLayout.setVerticalGroup(
             competitiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -385,7 +442,7 @@ public class after12 extends javax.swing.JFrame {
                 .addComponent(jLabel17)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab2", competitive);
@@ -504,7 +561,7 @@ public class after12 extends javax.swing.JFrame {
                     .addGroup(beLayout.createSequentialGroup()
                         .addGap(6, 6, 6)
                         .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 813, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(128, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         beLayout.setVerticalGroup(
             beLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -577,12 +634,48 @@ public class after12 extends javax.swing.JFrame {
         jTabbedPane1.setSelectedIndex(3);
     }//GEN-LAST:event_btnbbaActionPerformed
 
-    private void jLabel16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel16MouseClicked
+    private void backbtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backbtnMouseClicked
         // TODO add your handling code here:
-        explorecareer ex = new explorecareer();
-        ex.setVisible(true);
+        explorecareer car = new explorecareer();
+        car.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jLabel16MouseClicked
+    }//GEN-LAST:event_backbtnMouseClicked
+
+    private void btnlink1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlink1ActionPerformed
+        // TODO add your handling code here:
+        Desktop desk = Desktop.getDesktop();
+        try {
+            desk.browse(new URI("https://ocw.mit.edu/search/"));
+        } catch (URISyntaxException ex) {
+            Logger.getLogger(after10.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(after10.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_btnlink1ActionPerformed
+
+    private void btnlink2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlink2ActionPerformed
+        // TODO add your handling code here:
+        Desktop desk = Desktop.getDesktop();
+        try {
+            desk.browse(new URI("https://ocw.mit.edu/search/"));
+        } catch (URISyntaxException ex) {
+            Logger.getLogger(after10.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(after10.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_btnlink2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+         Desktop desk = Desktop.getDesktop();
+        try {
+            desk.browse(new URI("https://collegedunia.com/india-colleges"));
+        } catch (URISyntaxException ex) {
+            Logger.getLogger(after10.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(after10.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -620,13 +713,17 @@ public class after12 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel backbtn;
     private javax.swing.JPanel be;
     private javax.swing.JPanel bsc;
     private javax.swing.JButton btnbba;
     private javax.swing.JButton btnbsc;
     private javax.swing.JButton btncom;
+    private javax.swing.JButton btnlink1;
+    private javax.swing.JButton btnlink2;
     private javax.swing.JButton btnpro;
     private javax.swing.JPanel competitive;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -643,11 +740,11 @@ public class after12 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
@@ -664,7 +761,6 @@ public class after12 extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane16;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
@@ -681,7 +777,6 @@ public class after12 extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea16;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
-    private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea5;
     private javax.swing.JTextArea jTextArea6;
     private javax.swing.JTextArea jTextArea7;
