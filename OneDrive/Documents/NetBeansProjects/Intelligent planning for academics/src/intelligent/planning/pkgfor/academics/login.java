@@ -37,9 +37,6 @@ public class login extends javax.swing.JFrame {
         jusername = new javax.swing.JLabel();
         jpassword = new javax.swing.JLabel();
         typeuser = new javax.swing.JTextField();
-        blogin = new javax.swing.JButton();
-        bsignup = new javax.swing.JButton();
-        bforgotp = new javax.swing.JButton();
         jlogin = new javax.swing.JLabel();
         bexit = new javax.swing.JLabel();
         typepassword = new javax.swing.JPasswordField();
@@ -47,8 +44,11 @@ public class login extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         checkbox = new javax.swing.JCheckBox();
-        jLabel5 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        btnforgotpassword = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         jPanel2.setBackground(new java.awt.Color(102, 102, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -74,7 +74,7 @@ public class login extends javax.swing.JFrame {
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel3.setBackground(new java.awt.Color(204, 255, 255));
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setLayout(null);
 
         jusername.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
@@ -94,52 +94,6 @@ public class login extends javax.swing.JFrame {
         });
         jPanel3.add(typeuser);
         typeuser.setBounds(230, 130, 220, 30);
-
-        blogin.setBackground(new java.awt.Color(102, 255, 255));
-        blogin.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        blogin.setText("LOGIN");
-        blogin.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 255, 255), 3, true));
-        blogin.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                bloginMouseClicked(evt);
-            }
-        });
-        blogin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bloginActionPerformed(evt);
-            }
-        });
-        jPanel3.add(blogin);
-        blogin.setBounds(110, 330, 120, 40);
-
-        bsignup.setBackground(new java.awt.Color(102, 255, 255));
-        bsignup.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        bsignup.setText("SIGN UP");
-        bsignup.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 255, 255), 3, true));
-        bsignup.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                bsignupMouseClicked(evt);
-            }
-        });
-        bsignup.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bsignupActionPerformed(evt);
-            }
-        });
-        jPanel3.add(bsignup);
-        bsignup.setBounds(110, 390, 120, 40);
-
-        bforgotp.setBackground(new java.awt.Color(102, 255, 255));
-        bforgotp.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        bforgotp.setText("forgot password ?");
-        bforgotp.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 255, 255)));
-        bforgotp.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                bforgotpMouseClicked(evt);
-            }
-        });
-        jPanel3.add(bforgotp);
-        bforgotp.setBounds(90, 500, 150, 22);
 
         jlogin.setBackground(new java.awt.Color(255, 255, 255));
         jlogin.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
@@ -167,15 +121,15 @@ public class login extends javax.swing.JFrame {
         jPanel3.add(typepassword);
         typepassword.setBounds(230, 190, 220, 30);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\icons8_Forgot_Password_50px_4.png")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\forgotpassword.png")); // NOI18N
         jPanel3.add(jLabel6);
-        jLabel6.setBounds(20, 480, 50, 50);
+        jLabel6.setBounds(10, 480, 50, 50);
 
-        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\icons8_Secure_50px.png")); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/password.png"))); // NOI18N
         jPanel3.add(jLabel7);
         jLabel7.setBounds(30, 190, 50, 50);
 
-        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\icons8_Account_50px.png")); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/user.png"))); // NOI18N
         jLabel8.setText("jLabel8");
         jPanel3.add(jLabel8);
         jLabel8.setBounds(30, 120, 50, 50);
@@ -190,11 +144,7 @@ public class login extends javax.swing.JFrame {
         jPanel3.add(checkbox);
         checkbox.setBounds(340, 230, 146, 22);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/loginpage.png"))); // NOI18N
-        jPanel3.add(jLabel5);
-        jLabel5.setBounds(260, 180, 690, 510);
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Arrowback.png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\Arrowback.png")); // NOI18N
         jLabel9.setText("jLabel9");
         jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -202,7 +152,48 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel3.add(jLabel9);
-        jLabel9.setBounds(10, 10, 37, 20);
+        jLabel9.setBounds(0, 0, 37, 30);
+
+        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\loginpage.png")); // NOI18N
+        jLabel10.setText("jLabel10");
+        jPanel3.add(jLabel10);
+        jLabel10.setBounds(260, 270, 470, 370);
+
+        btnforgotpassword.setBackground(new java.awt.Color(255, 0, 153));
+        btnforgotpassword.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnforgotpassword.setText("FORGOT PASSWORD");
+        btnforgotpassword.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 255, 255), 3, true));
+        btnforgotpassword.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnforgotpasswordMouseClicked(evt);
+            }
+        });
+        jPanel3.add(btnforgotpassword);
+        btnforgotpassword.setBounds(60, 490, 210, 25);
+
+        jButton1.setBackground(new java.awt.Color(255, 0, 153));
+        jButton1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jButton1.setText("LOGIN");
+        jButton1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 255, 255), 3, true));
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
+        jPanel3.add(jButton1);
+        jButton1.setBounds(110, 330, 120, 40);
+
+        jButton2.setBackground(new java.awt.Color(255, 0, 153));
+        jButton2.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jButton2.setText("SIGN UP");
+        jButton2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 255, 255), 3, true));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton2);
+        jButton2.setBounds(110, 400, 120, 40);
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 640));
 
@@ -213,26 +204,6 @@ public class login extends javax.swing.JFrame {
     private void typeuserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_typeuserActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_typeuserActionPerformed
-
-    private void bsignupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bsignupActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bsignupActionPerformed
-
-    private void bloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bloginActionPerformed
-        // TODO add your handling code here:
-        String username = typeuser.getText();
-        String password = typepassword.getText();
-        if("user".equals(username)&& "6124".equals(password))
-        {
-            welcome wel = new welcome();
-        wel.setVisible(true);
-        this.dispose();
-        } 
-        else
-        {
-            JOptionPane.showMessageDialog(this, "INVALID USERNAME OR PASSWORD" + "");
-        }
-    }//GEN-LAST:event_bloginActionPerformed
 
     private void bexitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bexitMouseClicked
 System.exit(0);       // TODO add your handling code here:
@@ -255,39 +226,33 @@ System.exit(0);       // TODO add your handling code here:
         }
     }//GEN-LAST:event_checkboxActionPerformed
 
-    private void bsignupMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bsignupMouseClicked
-        // TODO add your handling code here:
-        
-       signuppage signup = new signuppage();
-        
-        signup.setVisible(true);
-        this.dispose();
-       
-        
-    }//GEN-LAST:event_bsignupMouseClicked
-
-    private void bforgotpMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bforgotpMouseClicked
-        // TODO add your handling code here:
-        
-      forgotpasswordpg  forgotp = new forgotpasswordpg();
-        
-        forgotp.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_bforgotpMouseClicked
-
-    private void bloginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bloginMouseClicked
-        // TODO add your handling code here:
-        welcome wel = new welcome();
-        wel.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_bloginMouseClicked
-
     private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
         // TODO add your handling code here:
         homepage hp = new homepage();
         hp.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel9MouseClicked
+
+    private void btnforgotpasswordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnforgotpasswordMouseClicked
+    forgotpasswordpg forgot = new forgotpasswordpg();
+    forgot.setVisible(true);
+    this.dispose();       
+    }//GEN-LAST:event_btnforgotpasswordMouseClicked
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        // TODO add your handling code here:
+        planfuture1 plan = new planfuture1();
+        plan.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        signuppage sign = new signuppage();
+        sign.setVisible(true);
+        this.dispose();
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -326,15 +291,15 @@ System.exit(0);       // TODO add your handling code here:
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel bexit;
-    private javax.swing.JButton bforgotp;
-    private javax.swing.JButton blogin;
-    private javax.swing.JButton bsignup;
+    private javax.swing.JButton btnforgotpassword;
     private javax.swing.JCheckBox checkbox;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
