@@ -27,159 +27,233 @@ public class nafter10 extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        lcs = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
-        jLabel35 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
-        jLabel38 = new javax.swing.JLabel();
-        jLabel39 = new javax.swing.JLabel();
-        jLabel40 = new javax.swing.JLabel();
-        jLabel41 = new javax.swing.JLabel();
-        jLabel42 = new javax.swing.JLabel();
+        csicon = new javax.swing.JLabel();
+        caicon = new javax.swing.JLabel();
+        lca = new javax.swing.JLabel();
+        animation = new javax.swing.JLabel();
+        lanimation = new javax.swing.JLabel();
+        creativeicon = new javax.swing.JLabel();
+        lcrea = new javax.swing.JLabel();
+        archicon = new javax.swing.JLabel();
+        larchi = new javax.swing.JLabel();
+        coasticon = new javax.swing.JLabel();
+        lcoast = new javax.swing.JLabel();
+        theatreicon = new javax.swing.JLabel();
+        ltheatre = new javax.swing.JLabel();
+        gamingicon = new javax.swing.JLabel();
+        lgame = new javax.swing.JLabel();
+        merchanticon = new javax.swing.JLabel();
+        lmerchant = new javax.swing.JLabel();
+        philosicon = new javax.swing.JLabel();
+        lphilos = new javax.swing.JLabel();
+        socialicon = new javax.swing.JLabel();
+        lsocial = new javax.swing.JLabel();
+        civilsicon = new javax.swing.JLabel();
+        lcivils = new javax.swing.JLabel();
+        dancericon = new javax.swing.JLabel();
+        ldancer = new javax.swing.JLabel();
+        archaelogyicon = new javax.swing.JLabel();
+        larchaelogy = new javax.swing.JLabel();
+        chemistryicon = new javax.swing.JLabel();
+        lchemistry = new javax.swing.JLabel();
+        cheficon = new javax.swing.JLabel();
+        lchef = new javax.swing.JLabel();
+        lnextpg = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel2.setText("Company Secretary");
+        lcs.setText("Company Secretary");
+        lcs.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lcsMouseClicked(evt);
+            }
+        });
 
         jPanel2.setBackground(new java.awt.Color(255, 0, 153));
 
-        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("EXPLORE CAREER");
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\career-listing-header-image.png")); // NOI18N
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Your Ideal Career Fit");
+
+        jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel13.setText("<");
+        jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel13MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(240, 240, 240))
+                .addContainerGap()
+                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1)
+                .addGap(23, 23, 23))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
                 .addContainerGap())
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(jLabel2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(jLabel13)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\ncompany-secretary.png")); // NOI18N
+        csicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\ncompany-secretary.png")); // NOI18N
+        csicon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                csiconMouseClicked(evt);
+            }
+        });
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\chartered-accountancy.png")); // NOI18N
+        caicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\chartered-accountancy.png")); // NOI18N
+        caicon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                caiconMouseClicked(evt);
+            }
+        });
 
-        jLabel5.setText("Chartered accountancy");
+        lca.setText("Chartered accountancy");
+        lca.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lcaMouseClicked(evt);
+            }
+        });
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\animation.png")); // NOI18N
+        animation.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\animation.png")); // NOI18N
+        animation.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                animationMouseClicked(evt);
+            }
+        });
 
-        jLabel7.setText("Animator");
+        lanimation.setText("Animator");
+        lanimation.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lanimationMouseClicked(evt);
+            }
+        });
 
-        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\creative-writing.png")); // NOI18N
+        creativeicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\creative-writing.png")); // NOI18N
+        creativeicon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                creativeiconMouseClicked(evt);
+            }
+        });
 
-        jLabel9.setText("Creative-Writing");
+        lcrea.setText("Creative-Writing");
+        lcrea.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lcreaMouseClicked(evt);
+            }
+        });
 
-        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\architect.png")); // NOI18N
+        archicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\architect.png")); // NOI18N
+        archicon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                archiconMouseClicked(evt);
+            }
+        });
 
-        jLabel11.setText("Architect");
+        larchi.setText("Architect");
+        larchi.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                larchiMouseClicked(evt);
+            }
+        });
 
-        jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\coast-guard.png")); // NOI18N
+        coasticon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\coast-guard.png")); // NOI18N
 
-        jLabel13.setText("Coast-Guard");
+        lcoast.setText("Coast-Guard");
 
-        jLabel14.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\dramatics.png")); // NOI18N
+        theatreicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\dramatics.png")); // NOI18N
+        theatreicon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                theatreiconMouseClicked(evt);
+            }
+        });
 
-        jLabel15.setText("Theatre Artist  ");
+        ltheatre.setText("Theatre Artist  ");
+        ltheatre.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ltheatreMouseClicked(evt);
+            }
+        });
 
-        jLabel16.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\game-designing-and-developement.png")); // NOI18N
+        gamingicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\12image\\graphic-designing (1).png")); // NOI18N
 
-        jLabel17.setText("Gaming");
+        lgame.setText("Graphical Desiginer");
 
-        jLabel18.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\merchant-navy.png")); // NOI18N
+        merchanticon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\merchant-navy.png")); // NOI18N
 
-        jLabel19.setText("Merchant-Navy");
+        lmerchant.setText("Merchant-Navy");
 
-        jLabel20.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\philosophy.png")); // NOI18N
+        philosicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\philosophy.png")); // NOI18N
 
-        jLabel21.setText("Philosophy");
+        lphilos.setText("Philosophy");
 
-        jLabel22.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\social-work.png")); // NOI18N
+        socialicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\social-work.png")); // NOI18N
 
-        jLabel23.setText("Socail-Work");
+        lsocial.setText("Social-Work");
 
-        jLabel24.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\aeronautical-engineering.png")); // NOI18N
+        civilsicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\civil-services.png")); // NOI18N
 
-        jLabel25.setText("aeronautical-engineering");
+        lcivils.setText("civil-services");
 
-        jLabel26.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\automobile-engineering.png")); // NOI18N
+        dancericon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\dance.png")); // NOI18N
+        dancericon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dancericonMouseClicked(evt);
+            }
+        });
 
-        jLabel27.setText("Automobile-engineering");
+        ldancer.setText("dancer");
+        ldancer.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ldancerMouseClicked(evt);
+            }
+        });
 
-        jLabel28.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\computer-engineering.png")); // NOI18N
+        archaelogyicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\archaeology.png")); // NOI18N
 
-        jLabel29.setText("Computer-engineering");
+        larchaelogy.setText("archaeology");
 
-        jLabel30.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\mechanical-engineering.png")); // NOI18N
+        chemistryicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\chemistry.png")); // NOI18N
 
-        jLabel31.setText("Mechanical-engineering");
+        lchemistry.setText("chemistry");
 
-        jLabel32.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\civil-services.png")); // NOI18N
+        cheficon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\culinary-artschefs.png")); // NOI18N
 
-        jLabel33.setText("civil-services");
+        lchef.setText("culinary-artschefs");
 
-        jLabel34.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\dance.png")); // NOI18N
-
-        jLabel35.setText("dancer");
-
-        jLabel36.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\archaeology.png")); // NOI18N
-
-        jLabel37.setText("archaeology");
-
-        jLabel38.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\chemistry.png")); // NOI18N
-
-        jLabel39.setText("chemistry");
-
-        jLabel40.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\culinary-artschefs.png")); // NOI18N
-
-        jLabel41.setText("culinary-artschefs");
-
-        jLabel42.setText("NEXET PAGE");
+        lnextpg.setText("NEXET PAGE");
+        lnextpg.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lnextpgMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -187,121 +261,97 @@ public class nafter10 extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(jLabel26))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addComponent(jLabel3)
-                        .addGap(101, 101, 101)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel14)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addGap(14, 14, 14)
-                                    .addComponent(jLabel2))
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addGap(27, 27, 27)
-                                    .addComponent(jLabel24))))
-                        .addGap(74, 74, 74)
-                        .addComponent(jLabel5)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel6)
-                                .addGap(57, 57, 57))
+                        .addGap(37, 37, 37)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(lcs)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(lca))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(ltheatre, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(theatreicon))
+                                .addGap(125, 125, 125)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(philosicon)
+                                    .addComponent(lphilos))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel16)
-                                    .addComponent(jLabel7)
-                                    .addComponent(jLabel28))
-                                .addGap(67, 67, 67)))
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING))
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jLabel23)
-                                        .addComponent(jLabel22))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(16, 16, 16)
-                                        .addComponent(jLabel30)))
-                                .addGap(55, 55, 55)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGap(10, 10, 10)
+                                        .addComponent(ldancer)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(larchaelogy))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel18)
-                                            .addComponent(jLabel19)
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGap(16, 16, 16)
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jLabel41)
-                                                    .addComponent(jLabel40)
-                                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                        .addComponent(jLabel13)
-                                                        .addComponent(jLabel12)))))
-                                        .addGap(0, 0, Short.MAX_VALUE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel10)
+                                            .addComponent(archicon)
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addGap(20, 20, 20)
-                                                .addComponent(jLabel11)))
-                                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(16, 16, 16)
-                                .addComponent(jLabel31)
-                                .addGap(0, 0, Short.MAX_VALUE))))
+                                                .addComponent(larchi))
+                                            .addComponent(dancericon))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(lcivils)
+                                            .addComponent(civilsicon)
+                                            .addComponent(archaelogyicon))))
+                                .addGap(32, 32, 32))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel36)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel42)
-                                .addComponent(jLabel37)))
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(98, 98, 98)
-                                .addComponent(jLabel38))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(116, 116, 116)
-                                .addComponent(jLabel39)))
-                        .addContainerGap())))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                        .addGap(49, 49, 49)
+                        .addComponent(csicon)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(caicon, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
+                        .addComponent(gamingicon)
+                        .addGap(118, 118, 118)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel27)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGap(36, 36, 36)
-                                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel33)
-                            .addComponent(jLabel21)
-                            .addComponent(jLabel20)
-                            .addComponent(jLabel32)
-                            .addComponent(jLabel34))
-                        .addGap(78, 78, 78)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel17)
-                                .addGap(57, 57, 57))
-                            .addComponent(jLabel29, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addGap(331, 331, 331))
+                            .addComponent(socialicon)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lsocial)
+                                    .addComponent(merchanticon)
+                                    .addComponent(lmerchant)
+                                    .addComponent(cheficon)
+                                    .addComponent(lchef))))
+                        .addGap(44, 44, 44))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel25)
-                        .addGap(100, 100, 100)
-                        .addComponent(jLabel35)
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(115, 115, 115)
+                                .addComponent(lanimation))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(95, 95, 95)
+                                .addComponent(animation)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lcrea)
+                            .addComponent(creativeicon))
+                        .addGap(66, 66, 66))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(124, 124, 124)
+                        .addComponent(chemistryicon)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(143, 143, 143)
+                                .addComponent(lchemistry))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(80, 80, 80)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(lgame)
+                                    .addComponent(coasticon)
+                                    .addComponent(lcoast))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lnextpg)
+                .addGap(370, 370, 370))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -309,94 +359,86 @@ public class nafter10 extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(9, 9, 9)
+                        .addComponent(csicon)
+                        .addGap(18, 18, 18)
+                        .addComponent(lcs))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(12, 12, 12)
+                        .addComponent(caicon)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(21, 21, 21)
-                                .addComponent(jLabel2))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel9)
-                                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel11))))
+                        .addComponent(lca, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(jLabel4)
-                        .addGap(4, 4, 4)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(creativeicon)
+                        .addGap(12, 12, 12)
+                        .addComponent(lcrea))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(animation)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lanimation, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(socialicon)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lsocial))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(philosicon)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lphilos))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(13, 13, 13)
-                        .addComponent(jLabel14)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel15))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(17, 17, 17)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel22)
-                                    .addComponent(jLabel18)
-                                    .addComponent(jLabel16))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(theatreicon)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(ltheatre))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(gamingicon)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel23)
-                                        .addComponent(jLabel19))
-                                    .addComponent(jLabel17)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel20)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel21)))
-                        .addGap(1, 1, 1)))
-                .addGap(45, 45, 45)
+                                .addComponent(lgame)
+                                .addGap(6, 6, 6)))))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jLabel26)
-                        .addComponent(jLabel32))
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(41, 41, 41)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(9, 9, 9)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel30)
-                                    .addComponent(jLabel28)))
-                            .addComponent(jLabel12))
-                        .addGap(18, 18, 18)
+                            .addComponent(archicon)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(coasticon)
+                                .addComponent(civilsicon))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(merchanticon)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(larchi)
+                        .addGap(47, 47, 47)
+                        .addComponent(dancericon))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lcivils)
+                            .addComponent(lcoast)
+                            .addComponent(lmerchant))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel29)
-                                .addComponent(jLabel33)
-                                .addComponent(jLabel27))
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel31)
-                                .addComponent(jLabel13)))))
-                .addGap(38, 38, 38)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel36)
-                    .addComponent(jLabel24)
-                    .addComponent(jLabel34)
-                    .addComponent(jLabel38)
-                    .addComponent(jLabel40))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel25)
-                    .addComponent(jLabel35)
-                    .addComponent(jLabel37)
-                    .addComponent(jLabel39)
-                    .addComponent(jLabel41))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
-                .addComponent(jLabel42)
-                .addGap(36, 36, 36))
+                            .addComponent(archaelogyicon, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(chemistryicon, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(cheficon, javax.swing.GroupLayout.Alignment.TRAILING))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
+                .addComponent(lnextpg)
+                .addGap(57, 57, 57))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ldancer)
+                    .addComponent(larchaelogy)
+                    .addComponent(lchemistry)
+                    .addComponent(lchef))
+                .addGap(111, 111, 111))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -412,6 +454,120 @@ public class nafter10 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void csiconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_csiconMouseClicked
+        // TODO add your handling code here:
+        cs com = new cs();
+        com.setVisible(true);
+        this.dispose();
+      
+    }//GEN-LAST:event_csiconMouseClicked
+
+    private void lcsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lcsMouseClicked
+        // TODO add your handling code here:
+        cs com = new cs();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lcsMouseClicked
+
+    private void caiconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_caiconMouseClicked
+        // TODO add your handling code here:
+        ca com = new ca();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_caiconMouseClicked
+
+    private void lcaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lcaMouseClicked
+        // TODO add your handling code here:
+         ca com = new ca();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lcaMouseClicked
+
+    private void animationMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_animationMouseClicked
+        // TODO add your handling code here:
+         animation com = new animation();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_animationMouseClicked
+
+    private void lanimationMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lanimationMouseClicked
+        // TODO add your handling code here:
+         animation com = new animation();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lanimationMouseClicked
+
+    private void creativeiconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_creativeiconMouseClicked
+        // TODO add your handling code here:
+         creative com = new creative();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_creativeiconMouseClicked
+
+    private void lcreaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lcreaMouseClicked
+        // TODO add your handling code here:
+         creative com = new creative();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lcreaMouseClicked
+
+    private void theatreiconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_theatreiconMouseClicked
+        // TODO add your handling code here:
+        thearte com = new thearte();
+        com.setVisible(true);
+        this.dispose();
+        
+    }//GEN-LAST:event_theatreiconMouseClicked
+
+    private void ltheatreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ltheatreMouseClicked
+        // TODO add your handling code here:
+         thearte com = new thearte();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_ltheatreMouseClicked
+
+    private void archiconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_archiconMouseClicked
+        // TODO add your handling code here:
+        architect com = new architect();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_archiconMouseClicked
+
+    private void larchiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_larchiMouseClicked
+        // TODO add your handling code here:
+        architect com = new architect();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_larchiMouseClicked
+
+    private void dancericonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dancericonMouseClicked
+        // TODO add your handling code here:
+        dancer com = new dancer();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_dancericonMouseClicked
+
+    private void ldancerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ldancerMouseClicked
+        // TODO add your handling code here:
+        dancer com = new dancer();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_ldancerMouseClicked
+
+    private void lnextpgMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lnextpgMouseClicked
+        // TODO add your handling code here:
+         nafter12th twe = new nafter12th();
+        twe.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lnextpgMouseClicked
+
+    private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
+        // TODO add your handling code here:
+        homepage ten = new homepage();
+        ten.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel13MouseClicked
 
     /**
      * @param args the command line arguments
@@ -449,49 +605,43 @@ public class nafter10 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel animation;
+    private javax.swing.JLabel archaelogyicon;
+    private javax.swing.JLabel archicon;
+    private javax.swing.JLabel caicon;
+    private javax.swing.JLabel cheficon;
+    private javax.swing.JLabel chemistryicon;
+    private javax.swing.JLabel civilsicon;
+    private javax.swing.JLabel coasticon;
+    private javax.swing.JLabel creativeicon;
+    private javax.swing.JLabel csicon;
+    private javax.swing.JLabel dancericon;
+    private javax.swing.JLabel gamingicon;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
-    private javax.swing.JLabel jLabel42;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel lanimation;
+    private javax.swing.JLabel larchaelogy;
+    private javax.swing.JLabel larchi;
+    private javax.swing.JLabel lca;
+    private javax.swing.JLabel lchef;
+    private javax.swing.JLabel lchemistry;
+    private javax.swing.JLabel lcivils;
+    private javax.swing.JLabel lcoast;
+    private javax.swing.JLabel lcrea;
+    private javax.swing.JLabel lcs;
+    private javax.swing.JLabel ldancer;
+    private javax.swing.JLabel lgame;
+    private javax.swing.JLabel lmerchant;
+    private javax.swing.JLabel lnextpg;
+    private javax.swing.JLabel lphilos;
+    private javax.swing.JLabel lsocial;
+    private javax.swing.JLabel ltheatre;
+    private javax.swing.JLabel merchanticon;
+    private javax.swing.JLabel philosicon;
+    private javax.swing.JLabel socialicon;
+    private javax.swing.JLabel theatreicon;
     // End of variables declaration//GEN-END:variables
 }

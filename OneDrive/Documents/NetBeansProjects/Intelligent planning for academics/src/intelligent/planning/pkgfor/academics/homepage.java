@@ -294,7 +294,7 @@ public class homepage extends javax.swing.JFrame {
 
     private void jLabel16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel16MouseClicked
         // TODO add your handling code here:
-        explorecareer ex= new explorecareer();
+        nafter10 ex= new nafter10();
         ex.setVisible(true);
         this.dispose();
         

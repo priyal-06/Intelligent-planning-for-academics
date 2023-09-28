@@ -1,19 +1,20 @@
+package intelligent.planning.pkgfor.academics;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package intelligent.planning.pkgfor.academics;
 
 /**
  *
  * @author Admin
  */
-public class after12 extends javax.swing.JFrame {
+public class nafter12th extends javax.swing.JFrame {
 
     /**
-     * Creates new form after12
+     * Creates new form nafter12th
      */
-    public after12() {
+    public nafter12th() {
         initComponents();
     }
 
@@ -243,9 +244,9 @@ public class after12 extends javax.swing.JFrame {
                 .addComponent(automicon)
                 .addGap(148, 148, 148)
                 .addComponent(csengicon)
-                .addGap(138, 138, 138)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 171, Short.MAX_VALUE)
                 .addComponent(mengicon)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(158, 158, 158)
                 .addComponent(aeroicon)
                 .addGap(33, 33, 33))
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -276,40 +277,39 @@ public class after12 extends javax.swing.JFrame {
                         .addComponent(jLabel11)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel13)))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGap(104, 104, 104)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(104, 104, 104)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                            .addComponent(jLabel7)
-                                            .addGap(193, 193, 193)
-                                            .addComponent(jLabel9))
-                                        .addComponent(jLabel18)
-                                        .addComponent(jLabel10))
-                                    .addComponent(lmeng)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(273, 273, 273)
-                                        .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(laero, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jLabel17)
-                                            .addComponent(jLabel16))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel15)
-                                        .addGap(287, 287, 287))))))
+                                .addComponent(lmeng)
+                                .addGap(95, 95, 95)
+                                .addComponent(laero))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel17)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel16)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel15)
+                        .addGap(174, 174, 174)
+                        .addComponent(jLabel18)
+                        .addGap(39, 39, 39))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel8)
-                        .addGap(233, 233, 233)))
-                .addContainerGap())
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel8)
+                                .addGap(110, 110, 110)
+                                .addComponent(jLabel10))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel7)
+                                .addGap(193, 193, 193)
+                                .addComponent(jLabel9)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -331,7 +331,7 @@ public class after12 extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(31, 31, 31)
                         .addComponent(lcseng)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -343,41 +343,37 @@ public class after12 extends javax.swing.JFrame {
                         .addComponent(jLabel9)
                         .addGap(24, 24, 24)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel13))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel4)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel8)
+                                .addComponent(jLabel10)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel4)
+                                .addGap(76, 76, 76)
+                                .addComponent(jLabel15))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(73, 73, 73)
-                                .addComponent(jLabel11))
+                                .addComponent(jLabel11)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(9, 9, 9)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(jLabel8)
-                                            .addComponent(jLabel10))
-                                        .addGap(67, 67, 67)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel18)
-                                            .addComponent(jLabel15)))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel16)
-                                        .addGap(11, 11, 11)))))
-                        .addGap(6, 6, 6)))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel12)
-                            .addComponent(jLabel14)
-                            .addComponent(jLabel17)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jLabel6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel13))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel18)
+                                    .addComponent(jLabel16))))
+                        .addGap(27, 27, 27)))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(jLabel14)
+                    .addComponent(jLabel17)
+                    .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(61, 61, 61))
         );
 
@@ -395,13 +391,6 @@ public class after12 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel20MouseClicked
-        // TODO add your handling code here:
-        homepage twe = new homepage();
-        twe.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jLabel20MouseClicked
-
     private void automiconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_automiconMouseClicked
         // TODO add your handling code here:
         automobileengineering auto= new automobileengineering();
@@ -409,12 +398,26 @@ public class after12 extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_automiconMouseClicked
 
+    private void lautomMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lautomMouseClicked
+        // TODO add your handling code here:
+         automobileengineering auto= new automobileengineering();
+        auto.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lautomMouseClicked
+
     private void csengiconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_csengiconMouseClicked
         // TODO add your handling code here:
-        comengg com= new comengg();
+         comengg com= new comengg();
         com.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_csengiconMouseClicked
+
+    private void lcsengMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lcsengMouseClicked
+        // TODO add your handling code here:
+         comengg com= new comengg();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lcsengMouseClicked
 
     private void mengiconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mengiconMouseClicked
         // TODO add your handling code here:
@@ -423,27 +426,6 @@ public class after12 extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_mengiconMouseClicked
 
-    private void aeroiconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aeroiconMouseClicked
-        // TODO add your handling code here:
-        aeronautical com= new aeronautical();
-        com.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_aeroiconMouseClicked
-
-    private void lautomMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lautomMouseClicked
-        // TODO add your handling code here:
-        automobileengineering auto= new automobileengineering();
-        auto.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_lautomMouseClicked
-
-    private void lcsengMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lcsengMouseClicked
-        // TODO add your handling code here:
-        comengg com= new comengg();
-        com.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_lcsengMouseClicked
-
     private void lmengMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lmengMouseClicked
         // TODO add your handling code here:
         mechanical com= new mechanical();
@@ -451,16 +433,23 @@ public class after12 extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_lmengMouseClicked
 
-    private void laeroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_laeroMouseClicked
+    private void aeroiconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aeroiconMouseClicked
         // TODO add your handling code here:
         aeronautical com= new aeronautical();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_aeroiconMouseClicked
+
+    private void laeroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_laeroMouseClicked
+        // TODO add your handling code here:
+         aeronautical com= new aeronautical();
         com.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_laeroMouseClicked
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
         // TODO add your handling code here:
-        gamedisining com= new gamedisining();
+         gamedisining com= new gamedisining();
         com.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel3MouseClicked
@@ -505,7 +494,8 @@ public class after12 extends javax.swing.JFrame {
         sociologist com= new sociologist();
         com.setVisible(true);
         this.dispose();
-
+       
+        
     }//GEN-LAST:event_jLabel9MouseClicked
 
     private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
@@ -514,6 +504,13 @@ public class after12 extends javax.swing.JFrame {
         com.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel10MouseClicked
+
+    private void jLabel20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel20MouseClicked
+        // TODO add your handling code here:
+         nafter10 twe = new nafter10();
+        twe.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel20MouseClicked
 
     /**
      * @param args the command line arguments
@@ -532,20 +529,20 @@ public class after12 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(after12.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(nafter12th.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(after12.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(nafter12th.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(after12.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(nafter12th.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(after12.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(nafter12th.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new after12().setVisible(true);
+                new nafter12th().setVisible(true);
             }
         });
     }
