@@ -194,7 +194,6 @@ public class after10 extends javax.swing.JFrame {
         });
 
         backbtn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        backbtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\back.png")); // NOI18N
         backbtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 backbtnMouseClicked(evt);
@@ -246,6 +245,7 @@ public class after10 extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         jLabel2.setText("DIPLOMA IN HOTEL MANAGEMENT ");
 
+        jTextArea2.setEditable(false);
         jTextArea2.setColumns(20);
         jTextArea2.setFont(new java.awt.Font("Verdana", 0, 10)); // NOI18N
         jTextArea2.setRows(5);
