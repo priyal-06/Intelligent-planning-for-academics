@@ -4,6 +4,13 @@
  */
 package intelligent.planning.pkgfor.academics;
 
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Admin
@@ -103,7 +110,7 @@ public class dancer extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTextArea2);
 
         jLabel8.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        jLabel8.setText("Explore similar occupations which are related to a animator .");
+        jLabel8.setText("Explore similar occupations which are related to a DANCER .");
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\actor-1.png")); // NOI18N
 
@@ -157,7 +164,7 @@ public class dancer extends javax.swing.JFrame {
         jLabel21.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\certification.png")); // NOI18N
 
         jLabel20.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel20.setText("Certifications");
+        jLabel20.setText(" Certifications/Reference");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -190,9 +197,9 @@ public class dancer extends javax.swing.JFrame {
                                     .addComponent(jLabel12)
                                     .addComponent(jLabel11)))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(69, 69, 69)
+                        .addContainerGap()
                         .addComponent(jLabel21)
-                        .addGap(29, 29, 29)
+                        .addGap(18, 18, 18)
                         .addComponent(jLabel20)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -201,12 +208,12 @@ public class dancer extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(19, 19, 19)
+                        .addGap(18, 18, 18)
                         .addComponent(jLabel21))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
+                        .addGap(26, 26, 26)
                         .addComponent(jLabel20)))
-                .addGap(53, 53, 53)
+                .addGap(54, 54, 54)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(26, 26, 26)
@@ -225,7 +232,7 @@ public class dancer extends javax.swing.JFrame {
                         .addGap(21, 21, 21)
                         .addComponent(jButton1))
                     .addComponent(jLabel10))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(133, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -319,10 +326,26 @@ public class dancer extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        Desktop desk = Desktop.getDesktop();
+        try {
+            desk.browse(new URI("https://www.snda.in/courses/certifications"));
+        } catch (URISyntaxException ex) {
+            Logger.getLogger(dancer.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(dancer.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        Desktop desk = Desktop.getDesktop();
+        try {
+            desk.browse(new URI("https://cid-world.org/certify-your-students/"));
+        } catch (URISyntaxException ex) {
+            Logger.getLogger(dancer.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(dancer.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked

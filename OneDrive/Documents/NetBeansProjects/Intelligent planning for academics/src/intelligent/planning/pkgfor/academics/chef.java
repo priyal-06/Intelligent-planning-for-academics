@@ -4,6 +4,13 @@
  */
 package intelligent.planning.pkgfor.academics;
 
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Admin
@@ -44,15 +51,13 @@ public class chef extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -60,6 +65,11 @@ public class chef extends javax.swing.JFrame {
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel13.setText("<");
+        jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel13MouseClicked(evt);
+            }
+        });
 
         jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\culinary-artschefs.png")); // NOI18N
 
@@ -97,7 +107,7 @@ public class chef extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTextArea2);
 
         jLabel10.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        jLabel10.setText("Explore similar occupations which are related to a animator .");
+        jLabel10.setText("Explore similar occupations which are related to a Chef .");
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\12image\\hotel-management.png")); // NOI18N
 
@@ -115,12 +125,6 @@ public class chef extends javax.swing.JFrame {
         jLabel11.setText("Food & Beverage Services Manager");
 
         jPanel2.setBackground(java.awt.Color.orange);
-
-        jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel16.setText("Culinary Arts");
-
-        jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel17.setText("THSC and NSDC India");
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setText("SEE DETAILS");
@@ -145,75 +149,62 @@ public class chef extends javax.swing.JFrame {
         });
 
         jLabel20.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel20.setText("Certifications");
+        jLabel20.setText(" Certifications/References");
 
         jLabel21.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\certification.png")); // NOI18N
 
-        jLabel14.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\12image\\thsc.png")); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        jLabel12.setText("CLICK ON SEE DETAILS TO GET VIDEO");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel21)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel20)
-                .addGap(67, 67, 67))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel14)
+                        .addGap(36, 36, 36)
+                        .addComponent(jLabel12))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(132, 132, 132)
+                        .addComponent(jButton2))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(47, 47, 47)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton2))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(55, 55, 55)
-                                .addComponent(jLabel16))))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel18)
-                            .addComponent(jButton1)))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(52, 52, 52)
-                        .addComponent(jLabel19))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(141, 141, 141)
-                        .addComponent(jLabel17)))
-                .addContainerGap(142, Short.MAX_VALUE))
+                            .addComponent(jLabel19)
+                            .addComponent(jLabel18)))
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
+                            .addGap(28, 28, 28)
+                            .addComponent(jLabel21)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel20))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
+                            .addGap(138, 138, 138)
+                            .addComponent(jButton1))))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
+                        .addGap(18, 18, 18)
                         .addComponent(jLabel21))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
+                        .addGap(33, 33, 33)
                         .addComponent(jLabel20)))
-                .addGap(62, 62, 62)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel14)
-                        .addGap(68, 68, 68))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel16)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel17)
-                        .addGap(41, 41, 41)))
-                .addComponent(jButton2)
                 .addGap(62, 62, 62)
                 .addComponent(jLabel18)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel19)
-                .addGap(29, 29, 29)
+                .addGap(30, 30, 30)
                 .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel12)
+                .addGap(18, 18, 18)
+                .addComponent(jButton2)
+                .addGap(170, 170, 170))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -260,7 +251,7 @@ public class chef extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(100, 100, 100)
                         .addComponent(jLabel10)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -320,11 +311,34 @@ public class chef extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+         Desktop desk = Desktop.getDesktop();
+        try {
+            desk.browse(new URI("https://www.apcaindia.com/brand-lp/?"));
+        } catch (URISyntaxException ex) {
+            Logger.getLogger(chef.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(chef.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        Desktop desk = Desktop.getDesktop();
+        try {
+            desk.browse(new URI("https://youtu.be/GmbJ_WyfS1k?si=yWvlOjknDrT7Mlp8"));
+        } catch (URISyntaxException ex) {
+            Logger.getLogger(chef.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(chef.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
+        // TODO add your handling code here:
+        nafter10 ten = new nafter10();
+        ten.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel13MouseClicked
 
     /**
      * @param args the command line arguments
@@ -367,10 +381,8 @@ public class chef extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;

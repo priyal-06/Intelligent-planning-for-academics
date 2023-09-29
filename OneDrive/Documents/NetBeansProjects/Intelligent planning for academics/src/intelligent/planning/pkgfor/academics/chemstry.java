@@ -4,6 +4,13 @@
  */
 package intelligent.planning.pkgfor.academics;
 
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Admin
@@ -60,6 +67,11 @@ public class chemstry extends javax.swing.JFrame {
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel13.setText("<");
+        jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel13MouseClicked(evt);
+            }
+        });
 
         jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\chemistry.png")); // NOI18N
 
@@ -97,7 +109,7 @@ public class chemstry extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTextArea2);
 
         jLabel10.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        jLabel10.setText("Explore similar occupations which are related to a animator .");
+        jLabel10.setText("Explore similar occupations which are related to a Chemist .");
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\12image\\biochemist-biophysicist.png")); // NOI18N
 
@@ -145,7 +157,7 @@ public class chemstry extends javax.swing.JFrame {
         });
 
         jLabel20.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel20.setText("Certifications");
+        jLabel20.setText(" Certifications/References");
 
         jLabel21.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\certification.png")); // NOI18N
 
@@ -158,9 +170,9 @@ public class chemstry extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(102, 102, 102)
+                        .addGap(20, 20, 20)
                         .addComponent(jLabel21)
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel20))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(12, 12, 12)
@@ -187,18 +199,18 @@ public class chemstry extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
+                        .addGap(15, 15, 15)
                         .addComponent(jLabel21))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
+                        .addGap(29, 29, 29)
                         .addComponent(jLabel20)))
-                .addGap(49, 49, 49)
+                .addGap(57, 57, 57)
                 .addComponent(jLabel14)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel16)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel17)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
                 .addComponent(jButton2)
                 .addGap(41, 41, 41)
                 .addComponent(jLabel18)
@@ -311,11 +323,34 @@ public class chemstry extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        Desktop desk = Desktop.getDesktop();
+        try {
+            desk.browse(new URI("https://www.coursera.org/learn/intro-chemistry?"));
+        } catch (URISyntaxException ex) {
+            Logger.getLogger(chemstry.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(chemstry.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        Desktop desk = Desktop.getDesktop();
+        try {
+            desk.browse(new URI("https://www.igmpiindia.org/postgraduatediplomainpharmaceuticalchemistry.html"));
+        } catch (URISyntaxException ex) {
+            Logger.getLogger(chemstry.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(chemstry.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
+        // TODO add your handling code here:
+        nafter10 ten = new nafter10();
+        ten.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel13MouseClicked
 
     /**
      * @param args the command line arguments

@@ -4,6 +4,13 @@
  */
 package intelligent.planning.pkgfor.academics;
 
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Admin
@@ -77,8 +84,8 @@ public class aeronautical extends javax.swing.JFrame {
 
         jPanel2.setBackground(java.awt.Color.orange);
 
-        jLabel6.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel6.setText(" Certifications");
+        jLabel6.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        jLabel6.setText(" Certifications/References");
 
         jLabel23.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\certification.png")); // NOI18N
 
@@ -118,71 +125,62 @@ public class aeronautical extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel23)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel6)
+                .addGap(115, 115, 115))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel23)
-                        .addGap(316, 316, 316))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel10)
-                        .addGap(165, 165, 165))))
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel11)
+                    .addComponent(jButton2))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel15))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(187, 187, 187)
-                        .addComponent(jButton2)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel6)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addGap(95, 95, 95)
-                            .addComponent(jLabel11))
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addGap(30, 30, 30)
-                            .addComponent(jLabel8))
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addGap(120, 120, 120)
-                            .addComponent(jLabel7))
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addGap(180, 180, 180)
+                        .addGap(20, 20, 20)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel8)
                             .addComponent(jButton1))))
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel23)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(11, 11, 11)
+                        .addContainerGap()
+                        .addComponent(jLabel23))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
                         .addComponent(jLabel6)))
-                .addGap(20, 20, 20)
+                .addGap(30, 30, 30)
                 .addComponent(jLabel15)
                 .addGap(28, 28, 28)
                 .addComponent(jLabel8)
-                .addGap(32, 32, 32)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel7)
                 .addGap(18, 18, 18)
                 .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 102, Short.MAX_VALUE)
                 .addComponent(jLabel10)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel11)
-                .addGap(34, 34, 34)
+                .addGap(27, 27, 27)
                 .addComponent(jButton2)
-                .addGap(84, 84, 84))
+                .addGap(85, 85, 85))
         );
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel12.setText("INTRODUCTION");
 
         jLabel13.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        jLabel13.setText("Explore similar occupations which are related to a animator .");
+        jLabel13.setText("Explore similar occupations which are related to a Aeronautical Engineer.");
 
         csengicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\computer-engineering.png")); // NOI18N
 
@@ -205,12 +203,12 @@ public class aeronautical extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(45, 45, 45)
                         .addComponent(csengicon)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(99, 99, 99)
                         .addComponent(aeroicon)
-                        .addGap(125, 125, 125)
+                        .addGap(121, 121, 121)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)))
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel4)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel1)
@@ -228,11 +226,9 @@ public class aeronautical extends javax.swing.JFrame {
                                 .addComponent(lcseng)
                                 .addGap(73, 73, 73)
                                 .addComponent(laero))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 572, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(77, 77, 77)
-                        .addComponent(jLabel13)))
-                .addGap(38, 38, 38)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 572, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel13))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -250,11 +246,11 @@ public class aeronautical extends javax.swing.JFrame {
                 .addComponent(jLabel12)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addGap(38, 38, 38)
                 .addComponent(jLabel13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(45, 45, 45)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(csengicon)
                             .addComponent(jLabel5))
@@ -262,12 +258,9 @@ public class aeronautical extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lcseng)
                             .addComponent(jLabel4)
-                            .addComponent(laero))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(53, 53, 53)
-                        .addComponent(aeroicon)
-                        .addGap(129, 129, 129))))
+                            .addComponent(laero)))
+                    .addComponent(aeroicon))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -275,7 +268,7 @@ public class aeronautical extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 1079, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -287,10 +280,28 @@ public class aeronautical extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        Desktop desk = Desktop.getDesktop();
+        try {
+            desk.browse(new URI("https://www.coursera.org/specializations/flight-mechanics-fundamentals?utm_source=gg&utm_medium=sem&utm_campaign=B2C_INDIA_google-it-automation_FTCOF_professional-certificates_arte-re-PMAX_nrl_within_14D&utm_content=B2C&campaignid=19204571260&adgroupid=&device=m&keyword=&matchtype=&network=x&devicemodel=&adpostion=&creativeid=&hide_mobile_promo&gclid=CjwKCAjwyNSoBhA9EiwA5aYlbx9KoCg49XOY46TnHW2ROTiMDjpH68w5geTuUq-GXHKBms-gRJz-JxoCpTMQAvD_BwE"
+                    + ""));
+        } catch (URISyntaxException ex) {
+            Logger.getLogger(aeronautical.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(aeronautical.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        Desktop desk = Desktop.getDesktop();
+        try {
+            desk.browse(new URI("https://www.coursera.org/specializations/aerospace?"));
+        } catch (URISyntaxException ex) {
+            Logger.getLogger(aeronautical.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(aeronautical.class.getName()).log(Level.SEVERE, null, ex);
+        }
+          
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

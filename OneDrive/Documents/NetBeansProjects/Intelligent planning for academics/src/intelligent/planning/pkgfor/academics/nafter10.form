@@ -455,11 +455,17 @@
               <Image iconType="2" name="C:\Users\Admin\Desktop\image\coast-guard.png"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="coasticonMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lcoast">
           <Properties>
             <Property name="text" type="java.lang.String" value="Coast-Guard"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lcoastMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="theatreicon">
           <Properties>
@@ -485,11 +491,17 @@
               <Image iconType="2" name="C:\Users\Admin\Desktop\12image\graphic-designing (1).png"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="gamingiconMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lgame">
           <Properties>
             <Property name="text" type="java.lang.String" value="Graphical Desiginer"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lgameMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="merchanticon">
           <Properties>
@@ -497,11 +509,17 @@
               <Image iconType="2" name="C:\Users\Admin\Desktop\image\merchant-navy.png"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="merchanticonMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lmerchant">
           <Properties>
             <Property name="text" type="java.lang.String" value="Merchant-Navy"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lmerchantMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="philosicon">
           <Properties>
@@ -509,11 +527,17 @@
               <Image iconType="2" name="C:\Users\Admin\Desktop\image\philosophy.png"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="philosiconMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lphilos">
           <Properties>
             <Property name="text" type="java.lang.String" value="Philosophy"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lphilosMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="socialicon">
           <Properties>
@@ -521,11 +545,17 @@
               <Image iconType="2" name="C:\Users\Admin\Desktop\image\social-work.png"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="socialiconMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lsocial">
           <Properties>
             <Property name="text" type="java.lang.String" value="Social-Work"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lsocialMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="civilsicon">
           <Properties>
@@ -533,11 +563,17 @@
               <Image iconType="2" name="C:\Users\Admin\Desktop\image\civil-services.png"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="civilsiconMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lcivils">
           <Properties>
             <Property name="text" type="java.lang.String" value="civil-services"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lcivilsMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="dancericon">
           <Properties>
@@ -563,11 +599,17 @@
               <Image iconType="2" name="C:\Users\Admin\Desktop\image\archaeology.png"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="archaelogyiconMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="larchaelogy">
           <Properties>
             <Property name="text" type="java.lang.String" value="archaeology"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="larchaelogyMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="chemistryicon">
           <Properties>
@@ -575,11 +617,17 @@
               <Image iconType="2" name="C:\Users\Admin\Desktop\image\chemistry.png"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="chemistryiconMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lchemistry">
           <Properties>
             <Property name="text" type="java.lang.String" value="chemistry"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lchemistryMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="cheficon">
           <Properties>
@@ -587,11 +635,17 @@
               <Image iconType="2" name="C:\Users\Admin\Desktop\image\culinary-artschefs.png"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="cheficonMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lchef">
           <Properties>
             <Property name="text" type="java.lang.String" value="culinary-artschefs"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lchefMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lnextpg">
           <Properties>

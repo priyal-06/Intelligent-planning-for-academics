@@ -15,12 +15,12 @@ import java.util.logging.Logger;
  *
  * @author Admin
  */
-public class philosophy extends javax.swing.JFrame {
+public class socialwork extends javax.swing.JFrame {
 
     /**
-     * Creates new form philosophy
+     * Creates new form socialwork
      */
-    public philosophy() {
+    public socialwork() {
         initComponents();
     }
 
@@ -35,7 +35,6 @@ public class philosophy extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -52,6 +51,7 @@ public class philosophy extends javax.swing.JFrame {
         jLabel21 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
+        socialicon = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -59,12 +59,15 @@ public class philosophy extends javax.swing.JFrame {
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel13.setText("<");
-
-        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\philosophy.png")); // NOI18N
+        jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel13MouseClicked(evt);
+            }
+        });
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel9.setForeground(java.awt.Color.orange);
-        jLabel9.setText("PHILOSOPHY");
+        jLabel9.setText("SOCIAL-WORKER");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel5.setText("INTRODUCTION");
@@ -75,7 +78,7 @@ public class philosophy extends javax.swing.JFrame {
         jTextArea1.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("The word Philosophy is derived from two Greek words; Philo meaning love and Sophia meaning wisdom. In general, it means love of wisdom. Philosophy is a broad field of knowledge in which the definition of knowledge itself is one of the subjects investigated. It spans the nature of the universe, the mind, and the body; the relationships between all three, and between people. Philosophy is a field of inquiry – the pursuit of wisdom; the predecessor and complement of science, developing the issues which underlie science and pondering those questions which are beyond the scope of science.");
+        jTextArea1.setText("Social workers are professionals who aim to enhance overall well-being and help meet basic and complex needs of communities and people. Social workers work with many different populations and types of people, particularly focusing on those who are vulnerable, oppressed and living in poverty.\n");
         jTextArea1.setWrapStyleWord(true);
         jTextArea1.setFocusable(false);
         jScrollPane1.setViewportView(jTextArea1);
@@ -86,7 +89,7 @@ public class philosophy extends javax.swing.JFrame {
         jTextArea2.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
         jTextArea2.setLineWrap(true);
         jTextArea2.setRows(5);
-        jTextArea2.setText("What do you do as a career ?\nBachelor's Degree in Philosophy\nThese highly critical, analytical, and argumentative skills that are developed often lead students to pursue legal studies, MBA programs, or seminaries. Jobs for philosophy majors include a lawyer, systems analyst, cultural affairs officer, technical writer, and a critic.");
+        jTextArea2.setText("What do you do as a career ?\nA social worker is a trained professional who works with all types of vulnerable people, groups, and communities to help them learn to live better lives. Social workers tend to work with populations suffering due to poverty, discrimination, or other social injustices.\n");
         jTextArea2.setWrapStyleWord(true);
         jTextArea2.setFocusable(false);
         jScrollPane2.setViewportView(jTextArea2);
@@ -94,7 +97,7 @@ public class philosophy extends javax.swing.JFrame {
         jPanel2.setBackground(java.awt.Color.orange);
 
         jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel16.setText("philosophy");
+        jLabel16.setText("SOCIAL WORKER");
 
         jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel17.setText("coursera");
@@ -109,7 +112,7 @@ public class philosophy extends javax.swing.JFrame {
         });
 
         jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel19.setText("udemy");
+        jLabel19.setText("COLLEGE DUNIA");
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("SEE DETAILS");
@@ -125,7 +128,7 @@ public class philosophy extends javax.swing.JFrame {
 
         jLabel21.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\certification.png")); // NOI18N
 
-        jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\udemy.png")); // NOI18N
+        jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\collegedunia.png")); // NOI18N
 
         jLabel14.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\12image\\cousera.png")); // NOI18N
 
@@ -140,24 +143,25 @@ public class philosophy extends javax.swing.JFrame {
                 .addComponent(jLabel20)
                 .addGap(67, 67, 67))
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(jLabel14)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel16)
-                                .addComponent(jLabel17)))
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addGap(33, 33, 33)
-                            .addComponent(jLabel12)
-                            .addGap(18, 18, 18)
-                            .addComponent(jLabel19))
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addGap(120, 120, 120)
-                            .addComponent(jButton2))))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel14)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel16)
+                            .addComponent(jLabel17)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(jLabel12)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel19))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(120, 120, 120)
+                        .addComponent(jButton2))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(112, 112, 112)
+                        .addComponent(jButton1)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -183,31 +187,36 @@ public class philosophy extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel12)
                     .addComponent(jLabel19))
-                .addGap(29, 29, 29)
+                .addGap(38, 38, 38)
                 .addComponent(jButton1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        socialicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\social-work.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel8)
+                        .addComponent(socialicon)
                         .addGap(36, 36, 36)
                         .addComponent(jLabel9))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(15, 15, 15)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 570, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 570, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(18, 24, Short.MAX_VALUE)
+                        .addComponent(jLabel5))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 527, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane2)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 372, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -216,19 +225,20 @@ public class philosophy extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel13)))
+                        .addComponent(jLabel13))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(16, 16, 16)
-                        .addComponent(jLabel9)))
+                        .addComponent(jLabel9))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(socialicon)))
                 .addGap(21, 21, 21)
                 .addComponent(jLabel5)
-                .addGap(33, 33, 33)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(42, 42, 42)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(57, Short.MAX_VALUE))
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -248,27 +258,37 @@ public class philosophy extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-         Desktop desk = Desktop.getDesktop();
+        Desktop desk = Desktop.getDesktop();
         try {
-            desk.browse(new URI("https://www.udemy.com/course/critical-thinker-academy/?"));
+            desk.browse(new URI("https://collegedunia.com/courses/social-work/certificate-course-in-social-work"));
         } catch (URISyntaxException ex) {
-            Logger.getLogger(philosophy.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(socialwork.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(philosophy.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(socialwork.class.getName()).log(Level.SEVERE, null, ex);
         }
+      
+      
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         Desktop desk = Desktop.getDesktop();
         try {
-            desk.browse(new URI("https://www.coursera.org/browse/arts-and-humanities/philosophy?"));
+            desk.browse(new URI("https://www.coursera.org/mastertrack/social-work-umich"));
         } catch (URISyntaxException ex) {
-            Logger.getLogger(philosophy.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(socialwork.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(philosophy.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(socialwork.class.getName()).log(Level.SEVERE, null, ex);
         }
+      
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
+        // TODO add your handling code here:
+         nafter10 ten = new nafter10();
+        ten.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel13MouseClicked
 
     /**
      * @param args the command line arguments
@@ -287,20 +307,20 @@ public class philosophy extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(philosophy.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(socialwork.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(philosophy.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(socialwork.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(philosophy.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(socialwork.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(philosophy.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(socialwork.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new philosophy().setVisible(true);
+                new socialwork().setVisible(true);
             }
         });
     }
@@ -317,7 +337,6 @@ public class philosophy extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -325,5 +344,6 @@ public class philosophy extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JLabel socialicon;
     // End of variables declaration//GEN-END:variables
 }

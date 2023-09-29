@@ -218,20 +218,65 @@ public class after12 extends javax.swing.JFrame {
         });
 
         jLabel11.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\12image\\Investment and Portfolio Manager.png")); // NOI18N
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
+        jLabel11.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jLabel11KeyPressed(evt);
+            }
+        });
 
         jLabel12.setText("Investment Portfolio Manager");
+        jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel12MouseClicked(evt);
+            }
+        });
 
         jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\12image\\law (1).png")); // NOI18N
+        jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel13MouseClicked(evt);
+            }
+        });
 
         jLabel14.setText("Law");
+        jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel14MouseClicked(evt);
+            }
+        });
 
         jLabel16.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\12image\\Web Designer.png")); // NOI18N
+        jLabel16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel16MouseClicked(evt);
+            }
+        });
 
         jLabel17.setText("Web Designer");
+        jLabel17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel17MouseClicked(evt);
+            }
+        });
 
         jLabel18.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\12image\\sports-management.png")); // NOI18N
+        jLabel18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel18MouseClicked(evt);
+            }
+        });
 
         jLabel19.setText("sports-management");
+        jLabel19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel19MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -514,6 +559,67 @@ public class after12 extends javax.swing.JFrame {
         com.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel10MouseClicked
+
+    private void jLabel11KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel11KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel11KeyPressed
+
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        // TODO add your handling code here:
+       investmanager com= new investmanager();
+        com.setVisible(true);
+        this.dispose();
+
+    }//GEN-LAST:event_jLabel11MouseClicked
+
+    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
+        // TODO add your handling code here:
+        investmanager com= new investmanager();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel12MouseClicked
+
+    private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
+        // TODO add your handling code here:
+        law com= new law();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel13MouseClicked
+
+    private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
+        // TODO add your handling code here:
+          law com= new law();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel14MouseClicked
+
+    private void jLabel16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel16MouseClicked
+        // TODO add your handling code here:
+         webdidiner com= new webdidiner();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel16MouseClicked
+
+    private void jLabel17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel17MouseClicked
+        // TODO add your handling code here:
+         webdidiner com= new webdidiner();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel17MouseClicked
+
+    private void jLabel18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel18MouseClicked
+        // TODO add your handling code here:
+         sportmanagement com= new sportmanagement();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel18MouseClicked
+
+    private void jLabel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseClicked
+        // TODO add your handling code here:
+        sportmanagement com= new sportmanagement();
+        com.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel19MouseClicked
 
     /**
      * @param args the command line arguments

@@ -4,6 +4,13 @@
  */
 package intelligent.planning.pkgfor.academics;
 
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Admin
@@ -93,7 +100,7 @@ public class architect extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTextArea1);
 
         jLabel8.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        jLabel8.setText("Explore similar occupations which are related to a animator .");
+        jLabel8.setText("Explore similar occupations which are related to a architect.");
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\architectural Assistant.png")); // NOI18N
 
@@ -142,8 +149,8 @@ public class architect extends javax.swing.JFrame {
         jLabel21.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel21.setText("IIT Kharagpur");
 
-        jLabel22.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel22.setText("Certifications");
+        jLabel22.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        jLabel22.setText(" Certifications/References");
 
         jLabel23.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\certification.png")); // NOI18N
 
@@ -175,7 +182,7 @@ public class architect extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, 269, Short.MAX_VALUE)
                                 .addGap(12, 12, 12))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -191,21 +198,21 @@ public class architect extends javax.swing.JFrame {
                                 .addGap(104, 104, 104))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                                 .addComponent(jLabel23)
-                                .addGap(18, 18, 18)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel22)
-                                .addGap(100, 100, 100))))))
+                                .addGap(87, 87, 87))))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addComponent(jLabel22))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(jLabel23)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel22)
+                        .addGap(28, 28, 28))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel23)
+                        .addGap(18, 18, 18)))
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel16)
@@ -227,7 +234,7 @@ public class architect extends javax.swing.JFrame {
                         .addComponent(jLabel21)))
                 .addGap(25, 25, 25)
                 .addComponent(jButton2)
-                .addContainerGap(281, Short.MAX_VALUE))
+                .addContainerGap(289, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -278,7 +285,7 @@ public class architect extends javax.swing.JFrame {
                                                             .addComponent(jLabel5))))))))
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGap(0, 1, Short.MAX_VALUE)
+                                .addGap(0, 60, Short.MAX_VALUE)
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 615, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(12, 12, 12))
                     .addGroup(jPanel1Layout.createSequentialGroup()

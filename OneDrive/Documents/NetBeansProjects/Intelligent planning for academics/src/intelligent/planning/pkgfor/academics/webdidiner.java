@@ -15,12 +15,12 @@ import java.util.logging.Logger;
  *
  * @author Admin
  */
-public class philosophy extends javax.swing.JFrame {
+public class webdidiner extends javax.swing.JFrame {
 
     /**
-     * Creates new form philosophy
+     * Creates new form webdidiner
      */
-    public philosophy() {
+    public webdidiner() {
         initComponents();
     }
 
@@ -35,7 +35,6 @@ public class philosophy extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -43,15 +42,15 @@ public class philosophy extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
         jPanel2 = new javax.swing.JPanel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jLabel19 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -59,12 +58,15 @@ public class philosophy extends javax.swing.JFrame {
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel13.setText("<");
-
-        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\philosophy.png")); // NOI18N
+        jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel13MouseClicked(evt);
+            }
+        });
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel9.setForeground(java.awt.Color.orange);
-        jLabel9.setText("PHILOSOPHY");
+        jLabel9.setText("WED DESIGNER");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel5.setText("INTRODUCTION");
@@ -75,7 +77,7 @@ public class philosophy extends javax.swing.JFrame {
         jTextArea1.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("The word Philosophy is derived from two Greek words; Philo meaning love and Sophia meaning wisdom. In general, it means love of wisdom. Philosophy is a broad field of knowledge in which the definition of knowledge itself is one of the subjects investigated. It spans the nature of the universe, the mind, and the body; the relationships between all three, and between people. Philosophy is a field of inquiry – the pursuit of wisdom; the predecessor and complement of science, developing the issues which underlie science and pondering those questions which are beyond the scope of science.");
+        jTextArea1.setText("Web Designers plan, ideate, create, and build websites and web pages, many of which combine a number of visual elements including text, photos, graphics, and video clips. A Web Designer also oversees the design and layout, which can mean working on a brand new website or updating existing pages.");
         jTextArea1.setWrapStyleWord(true);
         jTextArea1.setFocusable(false);
         jScrollPane1.setViewportView(jTextArea1);
@@ -86,18 +88,12 @@ public class philosophy extends javax.swing.JFrame {
         jTextArea2.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
         jTextArea2.setLineWrap(true);
         jTextArea2.setRows(5);
-        jTextArea2.setText("What do you do as a career ?\nBachelor's Degree in Philosophy\nThese highly critical, analytical, and argumentative skills that are developed often lead students to pursue legal studies, MBA programs, or seminaries. Jobs for philosophy majors include a lawyer, systems analyst, cultural affairs officer, technical writer, and a critic.");
+        jTextArea2.setText("What do you do as a career ?\nWeb designers plan, create and code internet sites and web pages, many of which combine text with sounds, pictures, graphics and video clips. A web designer is responsible for creating the design and layout of a website or web pages.\n\n");
         jTextArea2.setWrapStyleWord(true);
         jTextArea2.setFocusable(false);
         jScrollPane2.setViewportView(jTextArea2);
 
         jPanel2.setBackground(java.awt.Color.orange);
-
-        jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel16.setText("philosophy");
-
-        jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel17.setText("coursera");
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setText("SEE DETAILS");
@@ -107,9 +103,6 @@ public class philosophy extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-
-        jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel19.setText("udemy");
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("SEE DETAILS");
@@ -125,9 +118,15 @@ public class philosophy extends javax.swing.JFrame {
 
         jLabel21.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\certification.png")); // NOI18N
 
-        jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\udemy.png")); // NOI18N
+        jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel19.setText("COURSERA");
 
-        jLabel14.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\12image\\cousera.png")); // NOI18N
+        jLabel22.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel22.setText("UDEMY");
+
+        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\12image\\cousera.png")); // NOI18N
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\udemy.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -140,24 +139,20 @@ public class philosophy extends javax.swing.JFrame {
                 .addComponent(jLabel20)
                 .addGap(67, 67, 67))
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addComponent(jLabel10)
+                        .addGap(18, 18, 18))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel2)
+                        .addGap(55, 55, 55)))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel22)
                     .addComponent(jButton1)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(jLabel14)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel16)
-                                .addComponent(jLabel17)))
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addGap(33, 33, 33)
-                            .addComponent(jLabel12)
-                            .addGap(18, 18, 18)
-                            .addComponent(jLabel19))
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addGap(120, 120, 120)
-                            .addComponent(jButton2))))
+                    .addComponent(jLabel19)
+                    .addComponent(jButton2))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -170,23 +165,26 @@ public class philosophy extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(31, 31, 31)
                         .addComponent(jLabel20)))
-                .addGap(68, 68, 68)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel14)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel22))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel16)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel17)))
-                .addGap(22, 22, 22)
-                .addComponent(jButton2)
-                .addGap(57, 57, 57)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel19))
-                .addGap(29, 29, 29)
+                        .addGap(32, 32, 32)
+                        .addComponent(jButton2)
+                        .addGap(107, 107, 107)
+                        .addComponent(jLabel19)
+                        .addGap(49, 49, 49))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGap(145, 145, 145)
+                        .addComponent(jLabel10)
+                        .addGap(10, 10, 10)))
                 .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(56, 56, 56))
         );
+
+        jLabel16.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\12image\\Web Designer.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -198,17 +196,17 @@ public class philosophy extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel8)
+                        .addComponent(jLabel16)
                         .addGap(36, 36, 36)
                         .addComponent(jLabel9))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(15, 15, 15)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 527, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel5)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 570, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 570, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(18, 24, Short.MAX_VALUE)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 372, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 527, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(18, 18, 18)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 364, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -216,19 +214,20 @@ public class philosophy extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel13)))
+                        .addComponent(jLabel13))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(16, 16, 16)
-                        .addComponent(jLabel9)))
-                .addGap(21, 21, 21)
+                        .addComponent(jLabel9))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel16)))
+                .addGap(23, 23, 23)
                 .addComponent(jLabel5)
-                .addGap(33, 33, 33)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(42, 42, 42)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(58, Short.MAX_VALUE))
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -240,7 +239,9 @@ public class philosophy extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -248,27 +249,35 @@ public class philosophy extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-         Desktop desk = Desktop.getDesktop();
+       Desktop desk = Desktop.getDesktop();
         try {
-            desk.browse(new URI("https://www.udemy.com/course/critical-thinker-academy/?"));
+            desk.browse(new URI("https://www.coursera.org/courses?query=web%20design"));
         } catch (URISyntaxException ex) {
-            Logger.getLogger(philosophy.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(webdidiner.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(philosophy.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(webdidiner.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        Desktop desk = Desktop.getDesktop();
+       Desktop desk = Desktop.getDesktop();
         try {
-            desk.browse(new URI("https://www.coursera.org/browse/arts-and-humanities/philosophy?"));
+            desk.browse(new URI("https://www.udemy.com/topic/web-design/"));
         } catch (URISyntaxException ex) {
-            Logger.getLogger(philosophy.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(webdidiner.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(philosophy.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(webdidiner.class.getName()).log(Level.SEVERE, null, ex);
         }
+
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
+        // TODO add your handling code here:
+         nafter12th twe = new nafter12th();
+        twe.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel13MouseClicked
 
     /**
      * @param args the command line arguments
@@ -287,20 +296,20 @@ public class philosophy extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(philosophy.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(webdidiner.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(philosophy.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(webdidiner.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(philosophy.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(webdidiner.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(philosophy.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(webdidiner.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new philosophy().setVisible(true);
+                new webdidiner().setVisible(true);
             }
         });
     }
@@ -308,16 +317,15 @@ public class philosophy extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

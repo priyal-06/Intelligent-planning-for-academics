@@ -185,8 +185,18 @@ public class nafter10 extends javax.swing.JFrame {
         });
 
         coasticon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\coast-guard.png")); // NOI18N
+        coasticon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                coasticonMouseClicked(evt);
+            }
+        });
 
         lcoast.setText("Coast-Guard");
+        lcoast.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lcoastMouseClicked(evt);
+            }
+        });
 
         theatreicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\dramatics.png")); // NOI18N
         theatreicon.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -203,24 +213,74 @@ public class nafter10 extends javax.swing.JFrame {
         });
 
         gamingicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\12image\\graphic-designing (1).png")); // NOI18N
+        gamingicon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                gamingiconMouseClicked(evt);
+            }
+        });
 
         lgame.setText("Graphical Desiginer");
+        lgame.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lgameMouseClicked(evt);
+            }
+        });
 
         merchanticon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\merchant-navy.png")); // NOI18N
+        merchanticon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                merchanticonMouseClicked(evt);
+            }
+        });
 
         lmerchant.setText("Merchant-Navy");
+        lmerchant.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lmerchantMouseClicked(evt);
+            }
+        });
 
         philosicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\philosophy.png")); // NOI18N
+        philosicon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                philosiconMouseClicked(evt);
+            }
+        });
 
         lphilos.setText("Philosophy");
+        lphilos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lphilosMouseClicked(evt);
+            }
+        });
 
         socialicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\social-work.png")); // NOI18N
+        socialicon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                socialiconMouseClicked(evt);
+            }
+        });
 
         lsocial.setText("Social-Work");
+        lsocial.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lsocialMouseClicked(evt);
+            }
+        });
 
         civilsicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\civil-services.png")); // NOI18N
+        civilsicon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                civilsiconMouseClicked(evt);
+            }
+        });
 
         lcivils.setText("civil-services");
+        lcivils.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lcivilsMouseClicked(evt);
+            }
+        });
 
         dancericon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\dance.png")); // NOI18N
         dancericon.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -237,16 +297,46 @@ public class nafter10 extends javax.swing.JFrame {
         });
 
         archaelogyicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\archaeology.png")); // NOI18N
+        archaelogyicon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                archaelogyiconMouseClicked(evt);
+            }
+        });
 
         larchaelogy.setText("archaeology");
+        larchaelogy.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                larchaelogyMouseClicked(evt);
+            }
+        });
 
         chemistryicon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\chemistry.png")); // NOI18N
+        chemistryicon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                chemistryiconMouseClicked(evt);
+            }
+        });
 
         lchemistry.setText("chemistry");
+        lchemistry.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lchemistryMouseClicked(evt);
+            }
+        });
 
         cheficon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\culinary-artschefs.png")); // NOI18N
+        cheficon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cheficonMouseClicked(evt);
+            }
+        });
 
         lchef.setText("culinary-artschefs");
+        lchef.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lchefMouseClicked(evt);
+            }
+        });
 
         lnextpg.setText("NEXET PAGE");
         lnextpg.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -568,6 +658,132 @@ public class nafter10 extends javax.swing.JFrame {
         ten.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel13MouseClicked
+
+    private void philosiconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_philosiconMouseClicked
+        // TODO add your handling code here:
+        philosophy ph= new philosophy();
+        ph.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_philosiconMouseClicked
+
+    private void lphilosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lphilosMouseClicked
+        // TODO add your handling code here:
+         philosophy ph= new philosophy();
+        ph.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lphilosMouseClicked
+
+    private void gamingiconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gamingiconMouseClicked
+        // TODO add your handling code here:
+         graphicaldesigner ph= new graphicaldesigner();
+        ph.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_gamingiconMouseClicked
+
+    private void lgameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lgameMouseClicked
+        // TODO add your handling code here:
+         graphicaldesigner ph= new graphicaldesigner();
+        ph.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lgameMouseClicked
+
+    private void socialiconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_socialiconMouseClicked
+        // TODO add your handling code here:
+        socialwork ph= new socialwork();
+        ph.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_socialiconMouseClicked
+
+    private void lsocialMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lsocialMouseClicked
+        // TODO add your handling code here: socialwork ph= new socialwork();
+        socialwork ph= new socialwork();
+        ph.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lsocialMouseClicked
+
+    private void civilsiconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_civilsiconMouseClicked
+        // TODO add your handling code here:
+        civilservice ph= new civilservice();
+        ph.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_civilsiconMouseClicked
+
+    private void lcivilsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lcivilsMouseClicked
+        // TODO add your handling code here:
+         civilservice ph= new civilservice();
+        ph.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lcivilsMouseClicked
+
+    private void coasticonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_coasticonMouseClicked
+        // TODO add your handling code here:
+        coastguard ph= new coastguard();
+        ph.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_coasticonMouseClicked
+
+    private void lcoastMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lcoastMouseClicked
+        // TODO add your handling code here:
+         coastguard ph= new coastguard();
+        ph.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lcoastMouseClicked
+
+    private void merchanticonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_merchanticonMouseClicked
+        // TODO add your handling code here:
+        merchantnavy ph= new merchantnavy();
+        ph.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_merchanticonMouseClicked
+
+    private void lmerchantMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lmerchantMouseClicked
+        // TODO add your handling code here:
+        merchantnavy ph= new merchantnavy();
+        ph.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lmerchantMouseClicked
+
+    private void archaelogyiconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_archaelogyiconMouseClicked
+        // TODO add your handling code here:
+        archeology ph= new archeology();
+        ph.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_archaelogyiconMouseClicked
+
+    private void larchaelogyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_larchaelogyMouseClicked
+        // TODO add your handling code here:
+        archeology ph= new archeology();
+        ph.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_larchaelogyMouseClicked
+
+    private void chemistryiconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_chemistryiconMouseClicked
+        // TODO add your handling code here:
+        chemstry ph= new chemstry();
+        ph.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_chemistryiconMouseClicked
+
+    private void lchemistryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lchemistryMouseClicked
+        // TODO add your handling code here:
+        chemstry ph= new chemstry();
+        ph.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lchemistryMouseClicked
+
+    private void cheficonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cheficonMouseClicked
+        // TODO add your handling code here:
+        chef ph= new chef();
+        ph.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_cheficonMouseClicked
+
+    private void lchefMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lchefMouseClicked
+        // TODO add your handling code here:
+         chef ph= new chef();
+        ph.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lchefMouseClicked
 
     /**
      * @param args the command line arguments

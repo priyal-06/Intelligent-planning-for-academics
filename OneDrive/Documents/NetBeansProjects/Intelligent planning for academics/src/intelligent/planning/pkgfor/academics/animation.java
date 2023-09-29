@@ -4,6 +4,13 @@
  */
 package intelligent.planning.pkgfor.academics;
 
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Admin
@@ -95,7 +102,7 @@ public class animation extends javax.swing.JFrame {
 
         jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\animatorpathway.jpg")); // NOI18N
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\ministryedu.png")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\12image\\cousera.png")); // NOI18N
 
         jLabel8.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         jLabel8.setText("Explore similar occupations which are related to a animator .");
@@ -104,7 +111,7 @@ public class animation extends javax.swing.JFrame {
         jLabel9.setText("ANIMATIONs");
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel10.setText("Ministry of Education");
+        jLabel10.setText("coursera");
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton1.setText("SEE DETAILS");
@@ -136,7 +143,7 @@ public class animation extends javax.swing.JFrame {
         jLabel23.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Desktop\\image\\certification.png")); // NOI18N
 
         jLabel22.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel22.setText("Certifications");
+        jLabel22.setText(" Certifications/References");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -241,7 +248,7 @@ public class animation extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel23)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -286,6 +293,14 @@ public class animation extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        Desktop desk = Desktop.getDesktop();
+        try {
+            desk.browse(new URI("https://www.coursera.org/courses?query=animation"));
+        } catch (URISyntaxException ex) {
+            Logger.getLogger(animation.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(animation.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
