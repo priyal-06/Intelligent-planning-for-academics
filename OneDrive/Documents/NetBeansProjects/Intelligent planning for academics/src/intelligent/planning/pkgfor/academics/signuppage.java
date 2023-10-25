@@ -4,6 +4,18 @@
  */
 package intelligent.planning.pkgfor.academics;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Admin
@@ -17,6 +29,25 @@ public class signuppage extends javax.swing.JFrame {
         initComponents();
     }
 
+    private void singup(){
+    
+     try{
+            
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/try", "root", "L@yirp6124");
+            String lusername=txtuserame.getText();
+           String lpassword = typepassword.getText();
+           
+          Statement stm =con.createStatement();
+         stm.executeUpdate("INSERT INTO login (username,password)"+ "VALUES ('"+lusername+"','"+lpassword+"')");
+                 
+              
+         con.close();
+         }
+          catch(Exception e) {
+              
+          }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -38,6 +69,8 @@ public class signuppage extends javax.swing.JFrame {
         iconuser = new javax.swing.JLabel();
         iconpassword = new javax.swing.JLabel();
         btndone = new javax.swing.JButton();
+        checkbox = new javax.swing.JCheckBox();
+        jButton1 = new javax.swing.JButton();
 
         jLabel3.setText("jLabel3");
 
@@ -64,30 +97,30 @@ public class signuppage extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(184, 184, 184)
+                .addGap(165, 165, 165)
                 .addComponent(labelsignup)
-                .addContainerGap(310, Short.MAX_VALUE))
+                .addContainerGap(329, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(labelsignup)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(labelsignup)
+                .addContainerGap())
         );
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, -1));
 
         lusername.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         lusername.setText("USERNAME");
-        jPanel1.add(lusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, -1, -1));
+        jPanel1.add(lusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, -1, -1));
 
         lpassword.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         lpassword.setText("PASSWORD");
-        jPanel1.add(lpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 250, -1, 50));
+        jPanel1.add(lpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, -1, 50));
 
         txtuserame.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtuserame.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
@@ -96,7 +129,7 @@ public class signuppage extends javax.swing.JFrame {
                 txtuserameActionPerformed(evt);
             }
         });
-        jPanel1.add(txtuserame, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 140, 198, 35));
+        jPanel1.add(txtuserame, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 120, 300, 35));
 
         typepassword.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         typepassword.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
@@ -105,13 +138,13 @@ public class signuppage extends javax.swing.JFrame {
                 typepasswordActionPerformed(evt);
             }
         });
-        jPanel1.add(typepassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 250, 198, 35));
+        jPanel1.add(typepassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 200, 300, 35));
 
         iconuser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/user.png"))); // NOI18N
-        jPanel1.add(iconuser, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, -1, -1));
+        jPanel1.add(iconuser, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, -1, -1));
 
         iconpassword.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/password.png"))); // NOI18N
-        jPanel1.add(iconpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 250, 52, -1));
+        jPanel1.add(iconpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 52, -1));
 
         btndone.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         btndone.setText("DONE");
@@ -120,17 +153,40 @@ public class signuppage extends javax.swing.JFrame {
                 btndoneMouseClicked(evt);
             }
         });
-        jPanel1.add(btndone, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 440, -1, -1));
+        btndone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btndoneActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btndone, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 390, 280, -1));
+
+        checkbox.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        checkbox.setText("show password");
+        checkbox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkboxActionPerformed(evt);
+            }
+        });
+        jPanel1.add(checkbox, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 250, -1, -1));
+
+        jButton1.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        jButton1.setText("Already have an account ?");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 330, 280, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 612, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 640, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
         );
 
         pack();
@@ -146,7 +202,7 @@ public class signuppage extends javax.swing.JFrame {
 
     private void btndoneMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btndoneMouseClicked
         // TODO add your handling code here:
-        planfuture1 plan = new planfuture1();
+        assesment plan = new assesment();
         plan.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btndoneMouseClicked
@@ -157,6 +213,37 @@ public class signuppage extends javax.swing.JFrame {
         home.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void checkboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkboxActionPerformed
+
+        // TODO add your handling code here:
+        if(checkbox.isSelected())
+        {
+            typepassword.setEchoChar((char)0);
+        }
+        else
+        {
+            typepassword.setEchoChar('*');
+        }
+    }//GEN-LAST:event_checkboxActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        login log = new login();
+        log.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void btndoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndoneActionPerformed
+        
+        
+         if(txtuserame.getText().isBlank() && typepassword.getText().isBlank()){
+         JOptionPane.showMessageDialog(this, "Please enter the username or password");
+         }else{singup();}
+ 
+         
+           
+    }//GEN-LAST:event_btndoneActionPerformed
 
     /**
      * @param args the command line arguments
@@ -195,8 +282,10 @@ public class signuppage extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btndone;
+    private javax.swing.JCheckBox checkbox;
     private javax.swing.JLabel iconpassword;
     private javax.swing.JLabel iconuser;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;

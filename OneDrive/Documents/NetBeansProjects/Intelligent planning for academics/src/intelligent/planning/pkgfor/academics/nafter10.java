@@ -338,7 +338,10 @@ public class nafter10 extends javax.swing.JFrame {
             }
         });
 
-        lnextpg.setText("NEXET PAGE");
+        lnextpg.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        lnextpg.setForeground(new java.awt.Color(255, 0, 153));
+        lnextpg.setText("NEXT PAGE");
+        lnextpg.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 0, 255), 2, true));
         lnextpg.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lnextpgMouseClicked(evt);
@@ -441,7 +444,7 @@ public class nafter10 extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lnextpg)
-                .addGap(370, 370, 370))
+                .addGap(336, 336, 336))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -518,9 +521,9 @@ public class nafter10 extends javax.swing.JFrame {
                             .addComponent(archaelogyicon, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(chemistryicon, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(cheficon, javax.swing.GroupLayout.Alignment.TRAILING))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
                 .addComponent(lnextpg)
-                .addGap(57, 57, 57))
+                .addGap(59, 59, 59))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
