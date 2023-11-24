@@ -73,7 +73,7 @@ public class assesment extends javax.swing.JFrame {
         jLabel2.setText("YOU ARE NEVER TOO OLD TO SET ANOTHER GOAL OR TO DREAM A NEW DREAM.");
 
         jLabel3.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        jLabel3.setText("TAKE ASSESMENT TO YOUR ABILITY OR SKILLS.");
+        jLabel3.setText("TAKE ASSESMENT TO KNOW  YOUR ABILITY OR SKILLS.");
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel5.setText("<");

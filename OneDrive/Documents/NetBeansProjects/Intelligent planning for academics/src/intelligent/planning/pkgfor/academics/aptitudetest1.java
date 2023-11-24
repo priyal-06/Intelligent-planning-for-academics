@@ -4,6 +4,7 @@
  */
 package intelligent.planning.pkgfor.academics;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
@@ -26,6 +27,12 @@ import javax.swing.JFrame;
  */
 public class aptitudetest1 extends javax.swing.JFrame {
 
+    int sec=60;
+    int min=9;
+    Timer time;
+    
+     boolean flag=true;
+    
     private int result_sci = 0;
     private int result_com = 0;
     private int result_arts = 0;
@@ -42,7 +49,7 @@ public class aptitudetest1 extends javax.swing.JFrame {
         FetchRecorApti();
         FetchRecorIntrest();
         FetchRecorComm();
-
+        timer(jLabel59,jLabel61);
         jPanel2.setVisible(true);
         jPanel3.setVisible(false);
         jPanel4.setVisible(false);
@@ -145,122 +152,122 @@ public class aptitudetest1 extends javax.swing.JFrame {
     public void set_label_Comm(int count, ResultSet result) throws Exception {
 
         if (count == 1) {
-            jLabel39.setText(result.getString("question"));
+            jLabel39.setText("1. "+result.getString("question"));
             jRadioButton91.setText(result.getString("option1"));
             jRadioButton92.setText(result.getString("option2"));
             jRadioButton93.setText(result.getString("option3"));
         }
         if (count == 2) {
-            jLabel40.setText(result.getString("question"));
+            jLabel40.setText("2. "+result.getString("question"));
             jRadioButton94.setText(result.getString("option1"));
             jRadioButton95.setText(result.getString("option2"));
             jRadioButton96.setText(result.getString("option3"));
         }
         if (count == 3) {
-            jLabel41.setText(result.getString("question"));
+            jLabel41.setText("3. "+result.getString("question"));
             jRadioButton97.setText(result.getString("option1"));
             jRadioButton98.setText(result.getString("option2"));
             jRadioButton99.setText(result.getString("option3"));
         }
         if (count == 4) {
-            jLabel42.setText(result.getString("question"));
+            jLabel42.setText("4. "+result.getString("question"));
             jRadioButton100.setText(result.getString("option1"));
             jRadioButton101.setText(result.getString("option2"));
             jRadioButton102.setText(result.getString("option3"));
         }
 
         if (count == 5) {
-            jLabel43.setText(result.getString("question"));
+            jLabel43.setText("5. "+result.getString("question"));
             jRadioButton103.setText(result.getString("option1"));
             jRadioButton104.setText(result.getString("option2"));
             jRadioButton105.setText(result.getString("option3"));
         }
         if (count == 6) {
-            jLabel44.setText(result.getString("question"));
+            jLabel44.setText("6. "+result.getString("question"));
             jRadioButton106.setText(result.getString("option1"));
             jRadioButton107.setText(result.getString("option2"));
             jRadioButton108.setText(result.getString("option3"));
         }
         if (count == 7) {
-            jLabel45.setText(result.getString("question"));
+            jLabel45.setText("7. "+result.getString("question"));
             jRadioButton109.setText(result.getString("option1"));
             jRadioButton110.setText(result.getString("option2"));
             jRadioButton111.setText(result.getString("option3"));
         }
         if (count == 8) {
-            jLabel46.setText(result.getString("question"));
+            jLabel46.setText("8. "+result.getString("question"));
             jRadioButton112.setText(result.getString("option1"));
             jRadioButton113.setText(result.getString("option2"));
             jRadioButton114.setText(result.getString("option3"));
         }
         if (count == 9) {
-            jLabel47.setText(result.getString("question"));
+            jLabel47.setText("9. "+result.getString("question"));
             jRadioButton115.setText(result.getString("option1"));
             jRadioButton116.setText(result.getString("option2"));
             jRadioButton117.setText(result.getString("option3"));
         }
         if (count == 10) {
-            jLabel48.setText(result.getString("question"));
+            jLabel48.setText("10. "+result.getString("question"));
             jRadioButton118.setText(result.getString("option1"));
             jRadioButton119.setText(result.getString("option2"));
             jRadioButton120.setText(result.getString("option3"));
         }
         if (count == 11) {
-            jLabel49.setText(result.getString("question"));
+            jLabel49.setText("11. "+result.getString("question"));
             jRadioButton121.setText(result.getString("option1"));
             jRadioButton122.setText(result.getString("option2"));
             jRadioButton123.setText(result.getString("option3"));
         }
         if (count == 12) {
-            jLabel50.setText(result.getString("question"));
+            jLabel50.setText("12. "+result.getString("question"));
             jRadioButton124.setText(result.getString("option1"));
             jRadioButton125.setText(result.getString("option2"));
             jRadioButton126.setText(result.getString("option3"));
         }
         if (count == 13) {
-            jLabel51.setText(result.getString("question"));
+            jLabel51.setText("13. "+result.getString("question"));
             jRadioButton127.setText(result.getString("option1"));
             jRadioButton128.setText(result.getString("option2"));
             jRadioButton129.setText(result.getString("option3"));
         }
         if (count == 14) {
-            jLabel52.setText(result.getString("question"));
+            jLabel52.setText("14. "+result.getString("question"));
             jRadioButton130.setText(result.getString("option1"));
             jRadioButton131.setText(result.getString("option2"));
             jRadioButton132.setText(result.getString("option3"));
         }
         if (count == 15) {
-            jLabel53.setText(result.getString("question"));
+            jLabel53.setText("15. "+result.getString("question"));
             jRadioButton133.setText(result.getString("option1"));
             jRadioButton134.setText(result.getString("option2"));
             jRadioButton135.setText(result.getString("option3"));
         }
         if (count == 16) {
-            jLabel54.setText(result.getString("question"));
+            jLabel54.setText("16. "+result.getString("question"));
             jRadioButton136.setText(result.getString("option1"));
             jRadioButton137.setText(result.getString("option2"));
             jRadioButton138.setText(result.getString("option3"));
         }
         if (count == 17) {
-            jLabel55.setText(result.getString("question"));
+            jLabel55.setText("17. "+result.getString("question"));
             jRadioButton139.setText(result.getString("option1"));
             jRadioButton140.setText(result.getString("option2"));
             jRadioButton141.setText(result.getString("option3"));
         }
         if (count == 18) {
-            jLabel56.setText(result.getString("question"));
+            jLabel56.setText("18. "+result.getString("question"));
             jRadioButton142.setText(result.getString("option1"));
             jRadioButton143.setText(result.getString("option2"));
             jRadioButton144.setText(result.getString("option3"));
         }
         if (count == 19) {
-            jLabel57.setText(result.getString("question"));
+            jLabel57.setText("19. "+result.getString("question"));
             jRadioButton145.setText(result.getString("option1"));
             jRadioButton146.setText(result.getString("option2"));
             jRadioButton147.setText(result.getString("option3"));
         }
         if (count == 20) {
-            jLabel58.setText(result.getString("question"));
+            jLabel58.setText("20. "+result.getString("question"));
             jRadioButton148.setText(result.getString("option1"));
             jRadioButton149.setText(result.getString("option2"));
             jRadioButton150.setText(result.getString("option3"));
@@ -271,27 +278,27 @@ public class aptitudetest1 extends javax.swing.JFrame {
     public void set_label_intrest_arts(int count, ResultSet result) throws Exception {
 
         if (count == 1) {
-            jLabel25.setText(result.getString("question"));
+            jLabel25.setText("3."+result.getString("question"));
             jRadioButton65.setText(result.getString("option1"));
             jRadioButton66.setText(result.getString("option2"));
         }
         if (count == 2) {
-            jLabel28.setText(result.getString("question"));
+            jLabel28.setText("6. "+result.getString("question"));
             jRadioButton71.setText(result.getString("option1"));
             jRadioButton72.setText(result.getString("option2"));
         }
         if (count == 3) {
-            jLabel31.setText(result.getString("question"));
+            jLabel31.setText("9. "+result.getString("question"));
             jRadioButton77.setText(result.getString("option1"));
             jRadioButton78.setText(result.getString("option2"));
         }
         if (count == 4) {
-            jLabel34.setText(result.getString("question"));
+            jLabel34.setText("12. "+result.getString("question"));
             jRadioButton83.setText(result.getString("option1"));
             jRadioButton84.setText(result.getString("option2"));
         }
         if (count == 5) {
-            jLabel37.setText(result.getString("question"));
+            jLabel37.setText("15. "+result.getString("question"));
             jRadioButton89.setText(result.getString("option1"));
             jRadioButton90.setText(result.getString("option2"));
         }
@@ -300,27 +307,27 @@ public class aptitudetest1 extends javax.swing.JFrame {
     public void set_label_intrest_com(int count, ResultSet result) throws Exception {
 
         if (count == 1) {
-            jLabel24.setText(result.getString("question"));
+            jLabel24.setText("2. "+result.getString("question"));
             jRadioButton63.setText(result.getString("option1"));
             jRadioButton64.setText(result.getString("option2"));
         }
         if (count == 2) {
-            jLabel27.setText(result.getString("question"));
+            jLabel27.setText("5. "+result.getString("question"));
             jRadioButton69.setText(result.getString("option1"));
             jRadioButton70.setText(result.getString("option2"));
         }
         if (count == 3) {
-            jLabel30.setText(result.getString("question"));
+            jLabel30.setText("8. "+result.getString("question"));
             jRadioButton75.setText(result.getString("option1"));
             jRadioButton76.setText(result.getString("option2"));
         }
         if (count == 4) {
-            jLabel33.setText(result.getString("question"));
+            jLabel33.setText("11. "+result.getString("question"));
             jRadioButton81.setText(result.getString("option1"));
             jRadioButton82.setText(result.getString("option2"));
         }
         if (count == 5) {
-            jLabel36.setText(result.getString("question"));
+            jLabel36.setText("14. "+result.getString("question"));
             jRadioButton87.setText(result.getString("option1"));
             jRadioButton88.setText(result.getString("option2"));
         }
@@ -330,27 +337,27 @@ public class aptitudetest1 extends javax.swing.JFrame {
     public void set_label_intrest_sci(int count, ResultSet result) throws Exception {
 
         if (count == 1) {
-            jLabel23.setText(result.getString("question"));
+            jLabel23.setText("1. "+result.getString("question"));
             jRadioButton61.setText(result.getString("option1"));
             jRadioButton62.setText(result.getString("option2"));
         }
         if (count == 2) {
-            jLabel26.setText(result.getString("question"));
+            jLabel26.setText("4. "+result.getString("question"));
             jRadioButton67.setText(result.getString("option1"));
             jRadioButton68.setText(result.getString("option2"));
         }
         if (count == 3) {
-            jLabel29.setText(result.getString("question"));
+            jLabel29.setText("7. "+result.getString("question"));
             jRadioButton73.setText(result.getString("option1"));
             jRadioButton74.setText(result.getString("option2"));
         }
         if (count == 4) {
-            jLabel32.setText(result.getString("question"));
+            jLabel32.setText("10. "+result.getString("question"));
             jRadioButton79.setText(result.getString("option1"));
             jRadioButton80.setText(result.getString("option2"));
         }
         if (count == 5) {
-            jLabel35.setText(result.getString("question"));
+            jLabel35.setText("13."+result.getString("question"));
             jRadioButton85.setText(result.getString("option1"));
             jRadioButton86.setText(result.getString("option2"));
         }
@@ -361,7 +368,7 @@ public class aptitudetest1 extends javax.swing.JFrame {
 
         apti_ans_arts[count] = result.getString("correctanswer");
         if (count == 1) {
-            jLabel3.setText(result.getString("question"));
+            jLabel3.setText("3. "+result.getString("question"));
             jRadioButton7.setText(result.getString("option1"));
             jRadioButton8.setText(result.getString("option2"));
             jRadioButton9.setText(result.getString("option3"));
@@ -369,7 +376,7 @@ public class aptitudetest1 extends javax.swing.JFrame {
         }
 
         if (count == 2) {
-            jLabel6.setText(result.getString("question"));
+            jLabel6.setText("6. "+result.getString("question"));
             jRadioButton16.setText(result.getString("option1"));
             jRadioButton17.setText(result.getString("option2"));
             jRadioButton18.setText(result.getString("option3"));
@@ -377,7 +384,7 @@ public class aptitudetest1 extends javax.swing.JFrame {
         }
 
         if (count == 3) {
-            jLabel9.setText(result.getString("question"));
+            jLabel9.setText("9. "+result.getString("question"));
             jRadioButton25.setText(result.getString("option1"));
             jRadioButton26.setText(result.getString("option2"));
             jRadioButton27.setText(result.getString("option3"));
@@ -385,7 +392,7 @@ public class aptitudetest1 extends javax.swing.JFrame {
         }
 
         if (count == 4) {
-            jLabel12.setText(result.getString("question"));
+            jLabel12.setText("12. "+result.getString("question"));
             jRadioButton34.setText(result.getString("option1"));
             jRadioButton35.setText(result.getString("option2"));
             jRadioButton36.setText(result.getString("option3"));
@@ -393,7 +400,7 @@ public class aptitudetest1 extends javax.swing.JFrame {
         }
 
         if (count == 5) {
-            jLabel15.setText(result.getString("question"));
+            jLabel15.setText("15. "+result.getString("question"));
             jRadioButton43.setText(result.getString("option1"));
             jRadioButton44.setText(result.getString("option2"));
             jRadioButton45.setText(result.getString("option3"));
@@ -401,7 +408,7 @@ public class aptitudetest1 extends javax.swing.JFrame {
         }
 
         if (count == 6) {
-            jLabel18.setText(result.getString("question"));
+            jLabel18.setText("18. "+result.getString("question"));
             jRadioButton52.setText(result.getString("option1"));
             jRadioButton53.setText(result.getString("option2"));
             jRadioButton54.setText(result.getString("option3"));
@@ -414,14 +421,14 @@ public class aptitudetest1 extends javax.swing.JFrame {
         apti_ans_com[count] = result.getString("correctanswer");
 
         if (count == 1) {
-            jLabel2.setText(result.getString("question"));
+            jLabel2.setText("2. "+result.getString("question"));
             jRadioButton4.setText(result.getString("option1"));
             jRadioButton5.setText(result.getString("option2"));
             jRadioButton6.setText(result.getString("option3"));
         }
 
         if (count == 2) {
-            jLabel5.setText(result.getString("question"));
+            jLabel5.setText("5. "+result.getString("question"));
             jRadioButton13.setText(result.getString("option1"));
             jRadioButton14.setText(result.getString("option2"));
             jRadioButton15.setText(result.getString("option3"));
@@ -429,7 +436,7 @@ public class aptitudetest1 extends javax.swing.JFrame {
         }
 
         if (count == 3) {
-            jLabel8.setText(result.getString("question"));
+            jLabel8.setText("8. "+result.getString("question"));
             jRadioButton22.setText(result.getString("option1"));
             jRadioButton23.setText(result.getString("option2"));
             jRadioButton24.setText(result.getString("option3"));
@@ -437,7 +444,7 @@ public class aptitudetest1 extends javax.swing.JFrame {
         }
 
         if (count == 4) {
-            jLabel11.setText(result.getString("question"));
+            jLabel11.setText("11. "+result.getString("question"));
             jRadioButton31.setText(result.getString("option1"));
             jRadioButton32.setText(result.getString("option2"));
             jRadioButton33.setText(result.getString("option3"));
@@ -445,7 +452,7 @@ public class aptitudetest1 extends javax.swing.JFrame {
         }
 
         if (count == 5) {
-            jLabel14.setText(result.getString("question"));
+            jLabel14.setText("14. "+result.getString("question"));
             jRadioButton40.setText(result.getString("option1"));
             jRadioButton41.setText(result.getString("option2"));
             jRadioButton42.setText(result.getString("option3"));
@@ -453,7 +460,7 @@ public class aptitudetest1 extends javax.swing.JFrame {
         }
 
         if (count == 6) {
-            jLabel17.setText(result.getString("question"));
+            jLabel17.setText("17. "+result.getString("question"));
             jRadioButton49.setText(result.getString("option1"));
             jRadioButton50.setText(result.getString("option2"));
             jRadioButton51.setText(result.getString("option3"));
@@ -461,7 +468,7 @@ public class aptitudetest1 extends javax.swing.JFrame {
         }
 
         if (count == 7) {
-            jLabel20.setText(result.getString("question"));
+            jLabel20.setText("20. "+result.getString("question"));
             jRadioButton58.setText(result.getString("option1"));
             jRadioButton59.setText(result.getString("option2"));
             jRadioButton60.setText(result.getString("option3"));
@@ -476,43 +483,43 @@ public class aptitudetest1 extends javax.swing.JFrame {
         System.out.println(result.getString("correctanswer"));
 
         if (count == 1) {
-            jLabel1.setText(result.getString("question"));
+            jLabel1.setText("1."+result.getString("question"));
             jRadioButton1.setText(result.getString("option1"));
             jRadioButton2.setText(result.getString("option2"));
             jRadioButton3.setText(result.getString("option3"));
         }
         if (count == 2) {
-            jLabel4.setText(result.getString("question"));
+            jLabel4.setText("4."+result.getString("question"));
             jRadioButton10.setText(result.getString("option1"));
             jRadioButton11.setText(result.getString("option2"));
             jRadioButton12.setText(result.getString("option3"));
         }
         if (count == 3) {
-            jLabel7.setText(result.getString("question"));
+            jLabel7.setText("7. "+result.getString("question"));
             jRadioButton19.setText(result.getString("option1"));
             jRadioButton20.setText(result.getString("option2"));
             jRadioButton21.setText(result.getString("option3"));
         }
         if (count == 4) {
-            jLabel10.setText(result.getString("question"));
+            jLabel10.setText("10. "+result.getString("question"));
             jRadioButton28.setText(result.getString("option1"));
             jRadioButton29.setText(result.getString("option2"));
             jRadioButton30.setText(result.getString("option3"));
         }
         if (count == 5) {
-            jLabel13.setText(result.getString("question"));
+            jLabel13.setText("13. "+result.getString("question"));
             jRadioButton37.setText(result.getString("option1"));
             jRadioButton38.setText(result.getString("option2"));
             jRadioButton39.setText(result.getString("option3"));
         }
         if (count == 6) {
-            jLabel16.setText(result.getString("question"));
+            jLabel16.setText("16. "+result.getString("question"));
             jRadioButton46.setText(result.getString("option1"));
             jRadioButton47.setText(result.getString("option2"));
             jRadioButton48.setText(result.getString("option3"));
         }
         if (count == 7) {
-            jLabel19.setText(result.getString("question"));
+            jLabel19.setText("19. "+result.getString("question"));
             jRadioButton55.setText(result.getString("option1"));
             jRadioButton56.setText(result.getString("option2"));
             jRadioButton57.setText(result.getString("option3"));
@@ -1035,6 +1042,58 @@ return all;
      return all;
 
     }
+    
+    private void timer(JLabel jLabel591, JLabel jLabel611){
+      time = new Timer(1000, new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent event) {
+            setForeground(Color.BLACK);
+            setForeground(Color.BLACK);
+            
+            if(sec==0){
+                sec=60;
+                min--;
+            }
+            
+            if(min==0){
+                setForeground(Color.RED);
+                setForeground(Color.RED);
+                
+            }
+            
+            if(min<0){
+                JOptionPane.showMessageDialog(rootPane,"Times Up","Stopped",0);
+                min=0;
+                sec=0;
+                time.stop();
+            }else{
+                
+                sec--;
+                if(sec<10){
+                    jLabel611.setText("0"+sec);
+                    flag=false;
+                    
+                }
+                if(min<10){
+                    jLabel591.setText("0"+min);
+                    if(sec<10){
+                        jLabel611.setText("0"+sec);
+                    }
+                    else{
+                        jLabel611.setText(""+sec);
+                    }
+                    flag=false;
+                    
+                }
+                if(flag){
+                    jLabel591.setText(""+min);
+                    jLabel611.setText(""+sec);
+                }}
+        }
+    });
+    time.start();
+    
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -1185,6 +1244,9 @@ return all;
         jRadioButton60 = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
         jLabel21 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
@@ -1233,6 +1295,9 @@ return all;
         jRadioButton89 = new javax.swing.JRadioButton();
         jRadioButton90 = new javax.swing.JRadioButton();
         jButton2 = new javax.swing.JButton();
+        jLabel62 = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel38 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
@@ -1316,6 +1381,9 @@ return all;
         jRadioButton149 = new javax.swing.JRadioButton();
         jRadioButton150 = new javax.swing.JRadioButton();
         jButton3 = new javax.swing.JButton();
+        jLabel65 = new javax.swing.JLabel();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -1324,14 +1392,19 @@ return all;
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setPreferredSize(new java.awt.Dimension(800, 2500));
 
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel5.setText("jLabel5");
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel1.setText("jLabel1");
 
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel2.setText("jLabel2");
 
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel3.setText("jLabel3");
 
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel4.setText("jLabel4");
 
         buttonGroup1.add(jRadioButton1);
@@ -1385,6 +1458,7 @@ return all;
         buttonGroup5.add(jRadioButton15);
         jRadioButton15.setText("jRadioButton15");
 
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel6.setText("jLabel6");
 
         buttonGroup6.add(jRadioButton16);
@@ -1396,6 +1470,7 @@ return all;
         buttonGroup6.add(jRadioButton18);
         jRadioButton18.setText("jRadioButton18");
 
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel7.setText("jLabel7");
 
         buttonGroup7.add(jRadioButton19);
@@ -1407,6 +1482,7 @@ return all;
         buttonGroup7.add(jRadioButton21);
         jRadioButton21.setText("jRadioButton21");
 
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel8.setText("jLabel8");
 
         buttonGroup8.add(jRadioButton22);
@@ -1418,6 +1494,7 @@ return all;
         buttonGroup8.add(jRadioButton24);
         jRadioButton24.setText("jRadioButton24");
 
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel9.setText("jLabel9");
 
         buttonGroup9.add(jRadioButton25);
@@ -1429,6 +1506,7 @@ return all;
         buttonGroup9.add(jRadioButton27);
         jRadioButton27.setText("jRadioButton27");
 
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel10.setText("jLabel10");
 
         buttonGroup10.add(jRadioButton28);
@@ -1440,6 +1518,7 @@ return all;
         buttonGroup10.add(jRadioButton30);
         jRadioButton30.setText("jRadioButton30");
 
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel11.setText("jLabel11");
 
         buttonGroup11.add(jRadioButton31);
@@ -1451,6 +1530,7 @@ return all;
         buttonGroup11.add(jRadioButton33);
         jRadioButton33.setText("jRadioButton33");
 
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel12.setText("jLabel12");
 
         buttonGroup12.add(jRadioButton34);
@@ -1462,6 +1542,7 @@ return all;
         buttonGroup12.add(jRadioButton36);
         jRadioButton36.setText("jRadioButton36");
 
+        jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel13.setText("jLabel13");
 
         buttonGroup13.add(jRadioButton37);
@@ -1473,6 +1554,7 @@ return all;
         buttonGroup13.add(jRadioButton39);
         jRadioButton39.setText("jRadioButton39");
 
+        jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel14.setText("jLabel14");
 
         buttonGroup14.add(jRadioButton40);
@@ -1484,6 +1566,7 @@ return all;
         buttonGroup14.add(jRadioButton42);
         jRadioButton42.setText("jRadioButton42");
 
+        jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel15.setText("jLabel15");
 
         buttonGroup15.add(jRadioButton43);
@@ -1495,6 +1578,7 @@ return all;
         buttonGroup15.add(jRadioButton45);
         jRadioButton45.setText("jRadioButton45");
 
+        jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel16.setText("jLabel16");
 
         buttonGroup16.add(jRadioButton46);
@@ -1506,6 +1590,7 @@ return all;
         buttonGroup16.add(jRadioButton48);
         jRadioButton48.setText("jRadioButton48");
 
+        jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel17.setText("jLabel17");
 
         buttonGroup17.add(jRadioButton49);
@@ -1517,6 +1602,7 @@ return all;
         buttonGroup17.add(jRadioButton51);
         jRadioButton51.setText("jRadioButton51");
 
+        jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel18.setText("jLabel18");
 
         buttonGroup18.add(jRadioButton52);
@@ -1528,6 +1614,7 @@ return all;
         buttonGroup18.add(jRadioButton54);
         jRadioButton54.setText("jRadioButton54");
 
+        jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel19.setText("jLabel19");
 
         buttonGroup19.add(jRadioButton55);
@@ -1539,6 +1626,7 @@ return all;
         buttonGroup19.add(jRadioButton57);
         jRadioButton57.setText("jRadioButton57");
 
+        jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel20.setText("jLabel20");
 
         buttonGroup20.add(jRadioButton58);
@@ -1560,6 +1648,15 @@ return all;
 
         jLabel21.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel21.setText("APTITUDE TEST");
+
+        jLabel59.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel59.setText("00");
+
+        jLabel60.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel60.setText(":");
+
+        jLabel61.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel61.setText("00");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -1654,20 +1751,33 @@ return all;
                             .addComponent(jRadioButton60))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 336, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel21)
-                        .addGap(274, 274, 274))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jButton1)
-                        .addGap(321, 321, 321))))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton1))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(364, 364, 364)
+                        .addComponent(jLabel21)))
+                .addGap(155, 155, 155)
+                .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jLabel60)
+                .addGap(0, 0, 0)
+                .addComponent(jLabel61)
+                .addGap(162, 162, 162))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jLabel21)
-                .addGap(7, 7, 7)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel21)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel59)
+                            .addComponent(jLabel60)
+                            .addComponent(jLabel61))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel1)
@@ -1829,9 +1939,9 @@ return all;
                 .addComponent(jRadioButton59)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jRadioButton60)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                 .addComponent(jButton1)
-                .addGap(41, 41, 41))
+                .addGap(46, 46, 46))
         );
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 820, 2500));
@@ -1841,6 +1951,7 @@ return all;
         jLabel22.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel22.setText("INTEREST");
 
+        jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel23.setText("jLabel23");
 
         buttonGroup21.add(jRadioButton61);
@@ -1849,6 +1960,7 @@ return all;
         buttonGroup21.add(jRadioButton62);
         jRadioButton62.setText("jRadioButton62");
 
+        jLabel24.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel24.setText("jLabel24");
 
         buttonGroup22.add(jRadioButton63);
@@ -1857,6 +1969,7 @@ return all;
         buttonGroup22.add(jRadioButton64);
         jRadioButton64.setText("jRadioButton64");
 
+        jLabel25.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel25.setText("jLabel25");
 
         buttonGroup23.add(jRadioButton65);
@@ -1865,6 +1978,7 @@ return all;
         buttonGroup23.add(jRadioButton66);
         jRadioButton66.setText("jRadioButton66");
 
+        jLabel26.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel26.setText("jLabel26");
 
         buttonGroup24.add(jRadioButton67);
@@ -1873,6 +1987,7 @@ return all;
         buttonGroup24.add(jRadioButton68);
         jRadioButton68.setText("jRadioButton68");
 
+        jLabel27.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel27.setText("jLabel27");
 
         buttonGroup25.add(jRadioButton69);
@@ -1881,11 +1996,13 @@ return all;
         buttonGroup25.add(jRadioButton70);
         jRadioButton70.setText("jRadioButton70");
 
+        jLabel28.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel28.setText("jLabel28");
 
         buttonGroup26.add(jRadioButton71);
         jRadioButton71.setText("jRadioButton71");
 
+        jLabel29.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel29.setText("jLabel29");
 
         buttonGroup26.add(jRadioButton72);
@@ -1897,6 +2014,7 @@ return all;
         buttonGroup35.add(jRadioButton74);
         jRadioButton74.setText("jRadioButton74");
 
+        jLabel30.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel30.setText("jLabel30");
 
         buttonGroup27.add(jRadioButton75);
@@ -1905,6 +2023,7 @@ return all;
         buttonGroup27.add(jRadioButton76);
         jRadioButton76.setText("jRadioButton76");
 
+        jLabel31.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel31.setText("jLabel31");
 
         buttonGroup28.add(jRadioButton77);
@@ -1913,6 +2032,7 @@ return all;
         buttonGroup28.add(jRadioButton78);
         jRadioButton78.setText("jRadioButton78");
 
+        jLabel32.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel32.setText("jLabel32");
 
         buttonGroup29.add(jRadioButton79);
@@ -1921,6 +2041,7 @@ return all;
         buttonGroup29.add(jRadioButton80);
         jRadioButton80.setText("jRadioButton80");
 
+        jLabel33.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel33.setText("jLabel33");
 
         buttonGroup30.add(jRadioButton81);
@@ -1934,6 +2055,7 @@ return all;
             }
         });
 
+        jLabel34.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel34.setText("jLabel34");
 
         buttonGroup31.add(jRadioButton83);
@@ -1942,6 +2064,7 @@ return all;
         buttonGroup31.add(jRadioButton84);
         jRadioButton84.setText("jRadioButton84");
 
+        jLabel35.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel35.setText("jLabel35");
 
         buttonGroup32.add(jRadioButton85);
@@ -1950,6 +2073,7 @@ return all;
         buttonGroup32.add(jRadioButton86);
         jRadioButton86.setText("jRadioButton86");
 
+        jLabel36.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel36.setText("jLabel36");
 
         buttonGroup33.add(jRadioButton87);
@@ -1958,6 +2082,7 @@ return all;
         buttonGroup33.add(jRadioButton88);
         jRadioButton88.setText("jRadioButton88");
 
+        jLabel37.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel37.setText("jLabel37");
 
         buttonGroup34.add(jRadioButton89);
@@ -1973,6 +2098,15 @@ return all;
                 jButton2ActionPerformed(evt);
             }
         });
+
+        jLabel62.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel62.setText("00");
+
+        jLabel63.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel63.setText(":");
+
+        jLabel64.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel64.setText("00");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -2033,14 +2167,24 @@ return all;
                         .addComponent(jButton2))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(343, 343, 343)
-                        .addComponent(jLabel22)))
-                .addContainerGap(344, Short.MAX_VALUE))
+                        .addComponent(jLabel22)
+                        .addGap(123, 123, 123)
+                        .addComponent(jLabel62)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel63)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel64)))
+                .addContainerGap(158, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(jLabel22)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel22)
+                    .addComponent(jLabel62)
+                    .addComponent(jLabel63)
+                    .addComponent(jLabel64))
                 .addGap(30, 30, 30)
                 .addComponent(jLabel23)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -2144,6 +2288,7 @@ return all;
         jLabel38.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel38.setText("COMMUNNICATION SKILL TEST");
 
+        jLabel39.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel39.setText("jLabel39");
 
         buttonGroup36.add(jRadioButton91);
@@ -2155,6 +2300,7 @@ return all;
         buttonGroup36.add(jRadioButton93);
         jRadioButton93.setText("jRadioButton93");
 
+        jLabel40.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel40.setText("jLabel40");
 
         buttonGroup37.add(jRadioButton94);
@@ -2166,6 +2312,7 @@ return all;
         buttonGroup37.add(jRadioButton96);
         jRadioButton96.setText("jRadioButton96");
 
+        jLabel41.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel41.setText("jLabel41");
 
         buttonGroup38.add(jRadioButton97);
@@ -2177,6 +2324,7 @@ return all;
         buttonGroup38.add(jRadioButton99);
         jRadioButton99.setText("jRadioButton99");
 
+        jLabel42.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel42.setText("jLabel42");
 
         buttonGroup39.add(jRadioButton100);
@@ -2188,6 +2336,7 @@ return all;
         buttonGroup39.add(jRadioButton102);
         jRadioButton102.setText("jRadioButton102");
 
+        jLabel43.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel43.setText("jLabel43");
 
         buttonGroup40.add(jRadioButton103);
@@ -2199,6 +2348,7 @@ return all;
         buttonGroup40.add(jRadioButton105);
         jRadioButton105.setText("jRadioButton105");
 
+        jLabel44.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel44.setText("jLabel44");
 
         buttonGroup41.add(jRadioButton106);
@@ -2210,6 +2360,7 @@ return all;
         buttonGroup41.add(jRadioButton108);
         jRadioButton108.setText("jRadioButton108");
 
+        jLabel45.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel45.setText("jLabel45");
 
         buttonGroup42.add(jRadioButton109);
@@ -2221,6 +2372,7 @@ return all;
         buttonGroup42.add(jRadioButton111);
         jRadioButton111.setText("jRadioButton111");
 
+        jLabel46.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel46.setText("jLabel46");
 
         buttonGroup43.add(jRadioButton112);
@@ -2232,6 +2384,7 @@ return all;
         buttonGroup43.add(jRadioButton114);
         jRadioButton114.setText("jRadioButton114");
 
+        jLabel47.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel47.setText("jLabel47");
 
         buttonGroup44.add(jRadioButton115);
@@ -2243,6 +2396,7 @@ return all;
         buttonGroup44.add(jRadioButton117);
         jRadioButton117.setText("jRadioButton117");
 
+        jLabel48.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel48.setText("jLabel48");
 
         buttonGroup45.add(jRadioButton118);
@@ -2254,6 +2408,7 @@ return all;
         buttonGroup45.add(jRadioButton120);
         jRadioButton120.setText("jRadioButton120");
 
+        jLabel49.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel49.setText("jLabel49");
 
         buttonGroup46.add(jRadioButton121);
@@ -2265,6 +2420,7 @@ return all;
         buttonGroup46.add(jRadioButton123);
         jRadioButton123.setText("jRadioButton123");
 
+        jLabel50.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel50.setText("jLabel50");
 
         buttonGroup47.add(jRadioButton124);
@@ -2279,6 +2435,7 @@ return all;
         jRadioButton126.setText("jRadioButton126");
         jRadioButton126.setAutoscrolls(true);
 
+        jLabel51.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel51.setText("jLabel51");
 
         buttonGroup48.add(jRadioButton127);
@@ -2290,6 +2447,7 @@ return all;
         buttonGroup48.add(jRadioButton129);
         jRadioButton129.setText("jRadioButton129");
 
+        jLabel52.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel52.setText("jLabel52");
 
         buttonGroup49.add(jRadioButton130);
@@ -2301,6 +2459,7 @@ return all;
         buttonGroup49.add(jRadioButton132);
         jRadioButton132.setText("jRadioButton132");
 
+        jLabel53.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel53.setText("jLabel53");
 
         buttonGroup50.add(jRadioButton133);
@@ -2312,6 +2471,7 @@ return all;
         buttonGroup50.add(jRadioButton135);
         jRadioButton135.setText("jRadioButton135");
 
+        jLabel54.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel54.setText("jLabel54");
 
         buttonGroup51.add(jRadioButton136);
@@ -2323,6 +2483,7 @@ return all;
         buttonGroup51.add(jRadioButton138);
         jRadioButton138.setText("jRadioButton138");
 
+        jLabel55.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel55.setText("jLabel55");
 
         buttonGroup52.add(jRadioButton139);
@@ -2334,6 +2495,7 @@ return all;
         buttonGroup52.add(jRadioButton141);
         jRadioButton141.setText("jRadioButton141");
 
+        jLabel56.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel56.setText("jLabel56");
 
         buttonGroup53.add(jRadioButton142);
@@ -2345,6 +2507,7 @@ return all;
         buttonGroup53.add(jRadioButton144);
         jRadioButton144.setText("jRadioButton144");
 
+        jLabel57.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel57.setText("jLabel57");
 
         buttonGroup54.add(jRadioButton145);
@@ -2356,6 +2519,7 @@ return all;
         buttonGroup54.add(jRadioButton147);
         jRadioButton147.setText("jRadioButton147");
 
+        jLabel58.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel58.setText("jLabel58");
 
         buttonGroup55.add(jRadioButton148);
@@ -2379,6 +2543,15 @@ return all;
                 jButton3ActionPerformed(evt);
             }
         });
+
+        jLabel65.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel65.setText("00");
+
+        jLabel66.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel66.setText(":");
+
+        jLabel67.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel67.setText("00");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -2471,7 +2644,13 @@ return all;
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLabel38)
-                .addGap(219, 219, 219))
+                .addGap(77, 77, 77)
+                .addComponent(jLabel65)
+                .addGap(0, 0, 0)
+                .addComponent(jLabel66)
+                .addGap(0, 0, 0)
+                .addComponent(jLabel67)
+                .addGap(54, 54, 54))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2481,7 +2660,11 @@ return all;
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(12, 12, 12)
-                .addComponent(jLabel38)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel38)
+                    .addComponent(jLabel65)
+                    .addComponent(jLabel66)
+                    .addComponent(jLabel67))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel39)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -2642,7 +2825,7 @@ return all;
                 .addComponent(jRadioButton149)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jRadioButton150)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
                 .addComponent(jButton3)
                 .addGap(625, 625, 625))
         );
@@ -2668,39 +2851,6 @@ return all;
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jRadioButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton11ActionPerformed
-        // TODO add your handling code here:
-
-    }//GEN-LAST:event_jRadioButton11ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code her
-
-//                if (jPanel2.isVisible()) {
-//                    jPanel2.setVisible(false);
-//                    jPanel3.setVisible(true);
-//                    jPanel4.setVisible(false);
-//                
-//                } else {
-//                    jPanel2.setVisible(true);
-//                    jPanel3.setVisible(false);
-//                    jPanel4.setVisible(false);
-//                }
-//        get_sci_result();
-//        get_com_result();
-//        get_arts_result();
-//        
-        if(get_sci_result()&& get_com_result() && get_arts_result()){
-        jPanel2.setVisible(false);
-        jPanel3.setVisible(true);
-        jPanel4.setVisible(false);
-        }
-
-        
-
-
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
@@ -2738,9 +2888,15 @@ return all;
        if(get_intrest_sci_result()&&
         get_intrest_com_result()&&
         get_intrest_arts_result()){
+           time.stop();
+           min=9;
+            sec=60;
+            flag=true;
+            timer(jLabel65,jLabel67);
         jPanel2.setVisible(false);
         jPanel3.setVisible(false);
         jPanel4.setVisible(true);
+        
        }
 
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -2752,6 +2908,40 @@ return all;
     private void jRadioButton148ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton148ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton148ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code her
+
+        //                if (jPanel2.isVisible()) {
+            //                    jPanel2.setVisible(false);
+            //                    jPanel3.setVisible(true);
+            //                    jPanel4.setVisible(false);
+            //
+            //                } else {
+            //                    jPanel2.setVisible(true);
+            //                    jPanel3.setVisible(false);
+            //                    jPanel4.setVisible(false);
+            //                }
+        //        get_sci_result();
+        //        get_com_result();
+        //        get_arts_result();
+        //
+        if(get_sci_result()&& get_com_result() && get_arts_result()){
+            time.stop();
+            min=9;
+            sec=60;
+            flag=true;
+            timer(jLabel62,jLabel64);
+            jPanel2.setVisible(false);
+            jPanel3.setVisible(true);
+            jPanel4.setVisible(false);
+        }
+
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jRadioButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton11ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2904,7 +3094,16 @@ return all;
     private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;

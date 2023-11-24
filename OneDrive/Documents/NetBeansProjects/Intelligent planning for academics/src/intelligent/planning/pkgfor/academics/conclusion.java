@@ -20,21 +20,51 @@ public class conclusion extends javax.swing.JFrame {
     /**
      * Creates new form conclusion
      */
+    String link;
     public conclusion() {
         initComponents();
     }
 
+    void openLink(){
+    
+        try {
+            Desktop desk = Desktop.getDesktop();
+            desk.browse(new URI(link));
+        } catch (URISyntaxException ex) {
+            Logger.getLogger(conclusion.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(conclusion.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
     public void setdata(int result_sci,int result_com,int result_arts){
         
-        if(result_sci>=result_com && result_sci>= result_arts){
-        jLabel2.setText("You are eligible for Science");
-        }else if( result_com >= result_sci &&  result_com >= result_arts){
-        jLabel2.setText("You are eligible for Commerce");
-        }else{
-        jLabel2.setText("You are eligible for Arts");
+        if(result_sci>result_com && result_sci> result_arts){
+        jLabel2.setText("You should go for Science Stream");
+        link="https://www.uniapply.com/blog/science-stream-after-10th/";
+        }else if( result_com >result_sci &&  result_com > result_arts){
+        jLabel2.setText("You should go for Commerce Stream");
+        link="https://www.uniapply.com/blog/commerce-stream-after-10th-subjects-courses-and-career-opportunities/";
+        }else if(result_arts >result_sci &&  result_arts > result_com){
+        jLabel2.setText("You should go for Arts Stream");
+        link="https://idreamcareer.com/blog/arts-courses-after-10th/";
         }
-    
+        if(result_sci==result_com){
+            jLabel2.setText("you can go for science as well as commerce");
+            link="https://www.selfstudys.com/update/courses-after-10th-list-of-60-arts-commerce-science-stream";
+        }
+        if(result_sci==result_arts){
+            jLabel2.setText("you can go for science as well as arts");
+            link="https://www.selfstudys.com/update/courses-after-10th-list-of-60-arts-commerce-science-stream";
+        }
+        if(result_com==result_arts){
+            jLabel2.setText("you can go for commerce as well as arts");
+            link="https://www.selfstudys.com/update/courses-after-10th-list-of-60-arts-commerce-science-stream";
+        }
+        
+       
     }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -49,15 +79,9 @@ public class conclusion extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
+        jButton7 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
 
         jButton1.setText("jButton1");
 
@@ -75,70 +99,7 @@ public class conclusion extends javax.swing.JFrame {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 0, 320, -1));
 
         jLabel3.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        jLabel3.setText("IF YOU ARE ELIGIBLE FOR SCIENCE CLICK ON BELOW LINK.");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 500, -1));
-
-        jLabel5.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        jLabel5.setText("IF YOU ARE ELIGIBLE FOR COMMERCE CLICK ON BELOW LINK.");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, 530, -1));
-
-        jButton2.setForeground(new java.awt.Color(51, 153, 255));
-        jButton2.setText("https://www.uniapply.com/blog/commerce-stream-after-10th-subjects-courses-and-career-opportunities/");
-        jButton2.setFocusable(false);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, -1, -1));
-
-        jLabel6.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        jLabel6.setText("IF YOU ARE ELIGIBLE FOR ARTS CLICK ON BELOW LINK.");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 480, 470, -1));
-
-        jButton3.setForeground(new java.awt.Color(51, 153, 255));
-        jButton3.setText("https://idreamcareer.com/blog/arts-courses-after-10th/");
-        jButton3.setFocusable(false);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 510, -1, -1));
-
-        jLabel7.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        jLabel7.setText("To get detailed information about all the courses");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 560, -1, -1));
-
-        jButton4.setForeground(new java.awt.Color(51, 153, 255));
-        jButton4.setText("https://youtu.be/YWVxasaOnNs?si=hRPjKsJs5ODdlIsI");
-        jButton4.setFocusable(false);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 580, 330, -1));
-
-        jButton5.setForeground(new java.awt.Color(51, 153, 255));
-        jButton5.setText("https://idreamcareer.com/blog/courses-after-10th-science/");
-        jButton5.setFocusable(false);
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 360, 390, 30));
-
-        jButton6.setForeground(new java.awt.Color(51, 153, 255));
-        jButton6.setText("https://www.uniapply.com/blog/science-stream-after-10th/");
-        jButton6.setFocusable(false);
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 320, 390, 30));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 380, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel4.setText("<");
@@ -148,6 +109,25 @@ public class conclusion extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
+
+        jButton7.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(0, 0, 255));
+        jButton7.setText("EXPLORE CAREER");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 370, 390, -1));
+
+        jButton4.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jButton4.setText("For more information about the stream please click here");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -163,75 +143,25 @@ public class conclusion extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        Desktop desk = Desktop.getDesktop();
-        try {
-            desk.browse(new URI("https://www.uniapply.com/blog/commerce-stream-after-10th-subjects-courses-and-career-opportunities/"));
-        } catch (URISyntaxException ex) {
-            Logger.getLogger(conclusion.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(conclusion.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-         Desktop desk = Desktop.getDesktop();
-        try {
-            desk.browse(new URI("https://idreamcareer.com/blog/arts-courses-after-10th/"));
-        } catch (URISyntaxException ex) {
-            Logger.getLogger(conclusion.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(conclusion.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-         Desktop desk = Desktop.getDesktop();
-        try {
-            desk.browse(new URI("https://youtu.be/YWVxasaOnNs?si=hRPjKsJs5ODdlIsI"));
-        } catch (URISyntaxException ex) {
-            Logger.getLogger(conclusion.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(conclusion.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-         Desktop desk = Desktop.getDesktop();
-        try {
-            desk.browse(new URI("https://idreamcareer.com/blog/courses-after-10th-science/"));
-        } catch (URISyntaxException ex) {
-            Logger.getLogger(conclusion.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(conclusion.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-    }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-         Desktop desk = Desktop.getDesktop();
-        try {
-            desk.browse(new URI("https://www.uniapply.com/blog/science-stream-after-10th/"));
-        } catch (URISyntaxException ex) {
-            Logger.getLogger(conclusion.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(conclusion.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-    }//GEN-LAST:event_jButton6ActionPerformed
-
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
         // TODO add your handling code here:
         homepage hp = new homepage();
         hp.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel4MouseClicked
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+        nafter10 af=new nafter10();
+        af.setVisible(true);
+        this.dispose();
+        
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        openLink();
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -270,18 +200,12 @@ public class conclusion extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
